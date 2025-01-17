@@ -1,11 +1,7 @@
 #include <stdio.h>
-void view()
-{
+    int main(){
     char a;
     scanf("%c",a);
-}
-
-int main() {
-    printf("%c", view());
+    printf("%c", a);
     return 0;
 }
