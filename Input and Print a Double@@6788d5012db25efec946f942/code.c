@@ -3,6 +3,6 @@
 int main(){
     double number;
     scanf("%lf", &number);
-    printf("you entered: %.4lf", number); //.4lf means upto 4 deci place
+    printf("You entered: %lf", number); //.4lf means upto 4 deci place
     return 0;
 }
