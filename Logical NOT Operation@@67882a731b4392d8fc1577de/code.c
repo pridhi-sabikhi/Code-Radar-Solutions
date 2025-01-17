@@ -1,3 +1,4 @@
+//vo tarike se ni kiya jisse bola hai 
 #include <stdio.h>
 int main() {
     int number;
