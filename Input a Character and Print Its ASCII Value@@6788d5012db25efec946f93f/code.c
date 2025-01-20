@@ -2,7 +2,7 @@
 int main(){
     char ch;
     scanf("%c", &ch);
-    int value= int (ch); //char ko int mein krne see uski acsii value store hoti hai
-    printf("ASCII Value: %d", value);
+    //char ko int mein krne see uski acsii value store hoti hai
+    printf("ASCII Value: %d", ch);
     return 0;
 }
