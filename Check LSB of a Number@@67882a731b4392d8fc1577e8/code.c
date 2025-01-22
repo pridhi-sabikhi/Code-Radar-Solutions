@@ -1,6 +1,5 @@
 //LSB is leftmost bit when decimal no. is converted to binary
 #include <stdio.h>
-#include <conio.h>
 int main() {
     int num;
     scanf("%d",num);
