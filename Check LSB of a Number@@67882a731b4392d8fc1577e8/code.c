@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main() {
     int num;
-    scanf("%d",num);
+    scanf("%d",&num);//agr yahan & na lagaya toh execution error packages/gcc aayega
     //LSB is 1st remainder after div with 2
     int remainder=num%2;
     if (remainder==1){
