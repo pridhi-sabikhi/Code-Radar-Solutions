@@ -15,7 +15,7 @@ int main() {
         break;
         case '/':printf("%d",num1/num2);
         break;
-        default:printf("error");
+       
     }
     return 0;
 }
