@@ -1,3 +1,6 @@
+//jb sirf 1 test case reh jaye pass hone se toh check kro ke kahin 
+//jo print krvana hai usmein spelling mistake toh ni 
+//kabhi kabhi uske karan bhi test case pass ni hota
 #include <stdio.h>
 int main() {
     int num;
