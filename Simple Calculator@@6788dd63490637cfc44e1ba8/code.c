@@ -3,7 +3,8 @@
 int main() {
     int num1,num2;
     char ch;//to i/p operator . here no need of ctype.h bcz koi char func ni lgana hai
-    scanf("%d %d %c", &num1, &num2, &ch); //can take %c in separate scanf but no need
+    scanf("%d %d", &num1, &num2); //can take %c in separate scanf but no need
+    scanf("%c", &ch);
     switch(ch){
         case '+':printf("%d",num1+num2);
         break;
