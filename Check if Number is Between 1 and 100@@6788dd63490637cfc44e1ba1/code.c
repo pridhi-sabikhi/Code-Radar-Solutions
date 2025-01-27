@@ -2,7 +2,7 @@
 int main() {
     int num;
     scanf("%d", &num);
-    for(int i=1;i<=100;i++){ //check ke 1 aur 100 include krna ke ni
+    for(int i=1;i<=100;i++){ //1 aur 100 include krna hai in range
          if (num==i){
             printf("In Range");
             return 0; //jaise no. mil gya print in range then exit prog
