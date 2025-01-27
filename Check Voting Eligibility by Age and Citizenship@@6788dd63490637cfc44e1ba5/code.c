@@ -6,6 +6,6 @@ int main() {
     scanf("%d", &status);//but take bool on next line bcz different data type hai
     if (age>=18 && status==1)//can write ==1 bcz bool hai toh both true and 1 are correct
     printf("Eligible");
-    else printf("Not Eligible"); //hamesha else ki next line mein printf likhte hai else ke saath ni likhte
+    else printf("Not Eligible"); //hamesha else ki next line mein printf likhte hai else ke saath bhi likh skte but don't
     return 0;
 }
