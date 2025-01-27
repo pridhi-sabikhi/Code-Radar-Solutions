@@ -6,7 +6,7 @@ int main() {
        printf("Yes");
     }
     else{  // w/m num2>num1
-        printf("No")
+        printf("No");
     }
     return 0;
 }
