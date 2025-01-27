@@ -10,7 +10,7 @@ int main() {
       printf("Isosceles");
     }
     else{  //w/m all sides are different
-       printf("Saclene");
+       printf("Scalene");
     }
     return 0;
 }
