@@ -1,3 +1,4 @@
+// do using math.sqrt num or num*0.5
 #include <stdio.h>
 int main() {
     int num;
