@@ -13,16 +13,18 @@ int main() {
 //agr int ans=num1+num2 then printf(ans) krna toh bhi hr case ke baad {}ni lgao
         case '-':
         ans= num1-num2;
+        printf("%d", ans);
         break;
         case '*':
         ans=num1*num2;
+        printf("%d", ans);
         break;
         case '/':
         ans=num1/num2;
+        printf("%d", ans);
         break;
         default:
         printf("Error");
        }
-       printf("%d", ans);
     return 0;
 }
