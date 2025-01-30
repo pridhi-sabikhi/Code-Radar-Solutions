@@ -1,3 +1,4 @@
+//most efficient code
 #include <stdio.h>
 int main() {
     int num, n;
