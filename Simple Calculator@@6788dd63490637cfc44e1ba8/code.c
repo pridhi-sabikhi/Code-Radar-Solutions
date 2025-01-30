@@ -1,6 +1,5 @@
 //can do with if
 #include <stdio.h>
-#include <ctype.h>
 int main() {
     int num1,num2, ans;
     char ch;//to i/p operator . here no need of ctype.h bcz koi char func ni lgana hai
