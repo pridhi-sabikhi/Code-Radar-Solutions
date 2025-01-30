@@ -1,3 +1,4 @@
+//optimised sol
 #include <stdio.h>
 int main() {
     int num;
