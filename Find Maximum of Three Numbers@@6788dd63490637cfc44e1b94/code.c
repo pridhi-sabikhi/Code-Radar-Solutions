@@ -39,6 +39,7 @@ int main(){
             printf("%d", c);
             break;
         }
-        break;// vaise can skip this or isse just pehle wali dono mein se koi 1 bbut dono hi nhi skip krni
+        break; //break of case 0 of 1st switch
+        // vaise can skip this or isse just pehle wali dono mein se koi 1 bbut dono hi nhi skip krni
     }
 }
