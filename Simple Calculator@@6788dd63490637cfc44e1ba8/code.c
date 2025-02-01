@@ -20,7 +20,7 @@ int main() {
         printf("%d", ans);
         break;
         case '/':
-        if(num==0){
+        if(num2==0){
             printf("Zero division error");
         }
         else{
