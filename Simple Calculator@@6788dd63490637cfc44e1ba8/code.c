@@ -3,8 +3,8 @@
 int main() {
     int num1,num2, ans;
     char ch;//to i/p operator . here no need of ctype.h bcz koi char func ni lgana hai
-    scanf("%d %d\n", &num1, &num2); // take %c in separate scanf ("%d %d %c", 7num1, &num2, &ch) krne se error aa rha
-     scanf("%c", &ch);
+    scanf("%d %d\n%c", &num1, &num2,&ch); // take %c in separate scanf ("%d %d %c", 7num1, &num2, &ch) krne se error aa rha
+     //scanf("%c", &ch);
     switch(ch){
         case '+':
         ans=num1+num2;
