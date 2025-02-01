@@ -3,9 +3,9 @@
 int main() {
     int num1,num2, ans;
     char ch;//to i/p operator . here no need of ctype.h bcz koi char func ni lgana hai
-    scanf("%d %d\n", &num1, &num2); // chahe take %c in separate scanf or 1 put \n after %d vrana ch takes space as i/p 
+    scanf("%d %d", &num1, &num2); // chahe take %c in separate scanf or 1 put \n after %d vrana ch takes space as i/p 
          //same line mein lena toh do like this
-         scanf("%c", &ch);
+         scanf(" %c", &ch);
     switch(ch){
         case '+':
         ans=num1+num2;
