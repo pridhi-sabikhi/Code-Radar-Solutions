@@ -21,8 +21,13 @@ int main() {
         printf("%d", ans);
         break;
         case '/':
+        if (num2==0){
+            printf("Zer division error");
+        }
+        else {
         ans=num1/num2;
         printf("%d", ans);
+        }
         break;
         default:
         printf("Error");
