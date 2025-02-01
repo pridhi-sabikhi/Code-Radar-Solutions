@@ -23,8 +23,7 @@ int main() {
         //ans=num1/num2;
         printf("%d", num1/num2);
         break;
-        default:
-        printf("Error");
+        
        }
     return 0;
 }
