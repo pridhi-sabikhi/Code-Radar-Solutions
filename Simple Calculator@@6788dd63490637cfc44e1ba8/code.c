@@ -6,24 +6,25 @@ int main() {
     scanf("%d %d", &num1, &num2); // take %c in separate scanf ("%d %d %c", 7num1, &num2, &ch) krne se error aa rha
      scanf("%c", &ch);
     switch(ch){
-        case "+":
+        case '+':
         //ans=num1+num2;
         printf("%d",num1+num2);
         break;
 //agr int ans=num1+num2 then printf(ans) krna toh bhi hr case ke baad {}ni lgao
-        case "-":
+        case '-':
         //ans= num1-num2;
         printf("%d", num1-num2);
         break;
-        case "*":
+        case '*':
         //ans=num1*num2;
         printf("%d", num1*num2);
         break;
-        case "/":
+        case '/':
         //ans=num1/num2;
         printf("%d", num1/num2);
         break;
-        
+        default:
+        printf("Error")
        }
     return 0;
 }
