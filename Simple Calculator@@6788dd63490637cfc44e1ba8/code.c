@@ -22,7 +22,7 @@ int main() {
         break;
         case '/':
         if (num2==0){
-            printf("Zer division error");
+            printf("Zero division error");
         }
         else {
         ans=num1/num2;
