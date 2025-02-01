@@ -5,15 +5,15 @@ int main() {
     if(isalpha(ch)){
         ch= tolower(ch);
         if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
-        pritnf("Vowel");
+        {pritnf("Vowel");}
         else
-        pritnf("Consonant");
+        {pritnf("Consonant");}
     }
     else{
         if (isdigit(ch))
-        printf("Digit");
+        {printf("Digit");}
         else
-        printf("Special Character");
+        {printf("Special Character");}
     }
     return 0;
 }
