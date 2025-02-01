@@ -7,21 +7,21 @@ int main() {
      scanf("%c", &ch);
     switch(ch){
         case '+':
-        ans=num1+num2;
-        printf("%d",ans);
+        //ans=num1+num2;
+        printf("%d",num1+num2);
         break;
 //agr int ans=num1+num2 then printf(ans) krna toh bhi hr case ke baad {}ni lgao
         case '-':
-        ans= num1-num2;
-        printf("%d", ans);
+        //ans= num1-num2;
+        printf("%d", num1-num2);
         break;
         case '*':
-        ans=num1*num2;
-        printf("%d", ans);
+        //ans=num1*num2;
+        printf("%d", num1*num2);
         break;
         case '/':
-        ans=num1/num2;
-        printf("%d", ans);
+        //ans=num1/num2;
+        printf("%d", num1/num2);
         break;
         default:
         printf("Error");
