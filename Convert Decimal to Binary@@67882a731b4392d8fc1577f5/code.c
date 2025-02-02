@@ -7,7 +7,7 @@ int main() {
     while(n>0)
     {
         r=n%2;
-        s=(string)r+s;
+        str=(string)r+str;
         n=n/2;
     }
     printf("%s", str);
