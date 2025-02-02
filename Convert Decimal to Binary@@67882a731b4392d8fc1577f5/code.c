@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>// to use string functs
+//#include <string.h>// to use string functs
 int main() {
     int num;
     string str;
