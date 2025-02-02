@@ -2,12 +2,13 @@
 //#include <string.h>// to use string functs
 int main() {
     int num, r;
-    string str;
+    string str, s;
     scanf("%d", &num);
     while(n>0)
     {
         r=n%2;
-        str=(string)r+str;
+        s=(string)r;
+        str=s+str;
         n=n/2;
     }
     printf("%s", str);
