@@ -7,20 +7,20 @@ int main(){
     switch(ch)
     {
         case '+':
-            add=num1+num2;
-            printf("%d", add);  
+        add=num1+num2;
+        printf("%d", add);  
         case '-':
         sub=num1-num2;
         printf("%d", sub);
-       // break;
+        break;
         case '*':
         mul=num1*num2;
         printf("%d",mul);
-        //break;
+        break;
         case '/':
         div=num1/num2;
         printf("%d", div);
-        //break;
+        break;
         default:
         printf("error");
     }
