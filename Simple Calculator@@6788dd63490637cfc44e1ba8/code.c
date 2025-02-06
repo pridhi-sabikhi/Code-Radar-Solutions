@@ -2,13 +2,15 @@
 int main(){
     int num1, num2, add, sub,mul,div;
     char ch;
-    scanf("%d %d", &num1, &num2);
     scanf("%c", &ch);
+    scanf("%d %d", &num1, &num2);
+    
     switch(ch)
     {
         case '+':
         add=num1+num2;
-        printf("%d", add);  
+        printf("%d", add);
+        break;  
         case '-':
         sub=num1-num2;
         printf("%d", sub);
