@@ -2,8 +2,8 @@
 int main(){
     int num1, num2;
     char ch;
-    scanf("%d %d\n", &num1, &num2);
-    scanf("%c", &ch);
+    scanf("%d %d", &num1, &num2);
+    scanf("\n%c", &ch);
     if(ch=='+')
     printf("%d", num1+num2);
     else if(ch=='-')
