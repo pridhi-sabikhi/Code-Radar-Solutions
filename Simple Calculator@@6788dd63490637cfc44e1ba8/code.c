@@ -1,25 +1,29 @@
 #include <stdio.h>
 int main(){
-    int num1, num2;
+    int num1, num2, add, sub,mul,div;
     char ch;
     scanf("%d %d", &num1, &num2);
     scanf("%c", &ch);
     switch(ch)
     {
         case '+':
-        printf("%d", num1+num2);
+        add=num1+num2;
+        printf("%d", add);
         break;
         case '-':
-        printf("%d", num1-num2);
+        sub=num1-num2;
+        printf("%d", sub);
         break;
         case '*':
-        printf("%d", num1*num2);
+        mul=num1*num2;
+        printf("%d",mul);
         break;
         case '/':
-        printf("%d", num1/num2);
+        div=num1/num2;
+        printf("%d", div);
         break;
         default:
-        printf("Error");
+        printf("error");
     }
     return 0;
 }
