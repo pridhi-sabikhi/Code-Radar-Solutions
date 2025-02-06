@@ -4,15 +4,22 @@ int main(){
     char ch;
     scanf("%d %d", &num1, &num2);
     scanf("%c", &ch);
-    if(ch=='+')
-    printf("%d", num1+num2);
-    else if(ch=='-')
-    printf("%d", num1-num2);
-    else if(ch=='*')
-    printf("%d", num1*num2);
-    else if(ch=='/')
-    printf("%d", num1/num2);
-    else 
-    printf("Error");
+    switch(ch)
+    {
+        case '+':
+        printf("%d", num1+num2);
+        break;
+        case '-':
+        printf("%d", num1-num2);
+        break;
+        case '*':
+        printf("%d", num1*num2);
+        break;
+        case '/':
+        printf("%d", num1/num2);
+        break;
+        default:
+        printf("Error");
+    }
     return 0;
 }
