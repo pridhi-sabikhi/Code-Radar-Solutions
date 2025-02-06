@@ -7,8 +7,8 @@ int main(){
     switch(ch)
     {
         case '+':
-        add=num1+num2;
-        printf("%d", add);
+            add=num1+num2;
+            printf("%d", add);  
         break;
         case '-':
         sub=num1-num2;
