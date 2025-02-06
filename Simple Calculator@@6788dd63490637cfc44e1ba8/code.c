@@ -3,7 +3,9 @@ int main(){
     int num1, num2, add, sub,mul,div;
     char ch;
     scanf("%d %d", &num1, &num2);
-    scanf(" %c", &ch);//not take i/p in 1 line it wil give error  and put  space before %c so that compiler can take i/p
+    scanf(" %c", &ch);
+    //not take i/p in 1 line it wil give error  and put  space before %c so that compiler can take i/p
+    //this tells compiler to ignore any whitespaces bby taking as i/p
     switch(ch)
     {
         case '+':
