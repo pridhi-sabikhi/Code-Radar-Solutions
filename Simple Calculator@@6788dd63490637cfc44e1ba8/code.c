@@ -3,7 +3,7 @@ int main(){
     int num1, num2, add, sub,mul,div;
     char ch;
     scanf("%d %d", &num1, &num2);
-    scanf("%c", &ch);
+    scanf(" %c", &ch);
     switch(ch)
     {
         case '+':
@@ -19,13 +19,12 @@ int main(){
         printf("%d",mul);
         break;
         case '/':
-        
-        div=num1/num2;
         if(num2==0)
         {
             printf("error");
         }
         else{
+        div=num1/num2;
         printf("%d", div);
         }
         break;
