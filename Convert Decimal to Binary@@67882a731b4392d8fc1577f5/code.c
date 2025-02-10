@@ -1,9 +1,10 @@
+//for big no.s(1024) int wont work so take long int
 #include <stdio.h>
 
 int main() {
-    int num, s = 0, r = 0;
-    int place = 1; // Variable to track the place value for binary digits (1, 10, 100, ...)
-    scanf("%d", &num);
+    long int num, s = 0, r = 0;
+    long int place = 1; // Variable to track the place value for binary digits (1, 10, 100, ...)
+    scanf("%ld", &num);
 
     while (num > 0) {
         r = num % 2;                  // Get the remainder (0 or 1)
@@ -13,7 +14,7 @@ int main() {
     }
 
     // Print the binary number
-    printf("%d\n", s);
+    printf("%ld\n", s);
 
     return 0;
 }
