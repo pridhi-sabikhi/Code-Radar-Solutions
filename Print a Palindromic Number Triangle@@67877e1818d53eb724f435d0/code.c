@@ -16,7 +16,7 @@ int main() {
         //printing reverse triangle
         for(int col=0;col<row;col++)
         {
-            printf("%d", col);
+            printf("%d", (col+1));
         }
         printf("\n");
     }
