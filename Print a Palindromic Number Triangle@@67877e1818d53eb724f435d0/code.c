@@ -14,9 +14,11 @@ int main() {
             printf("%d", (col+1));
         }
         //printing reverse triangle
+        int start=row+1;
         for(int col=0;col<row;col++)
         {
-            printf("%d", (col+1));
+            printf("%d", (start));
+            start--;
         }
         printf("\n");
     }
