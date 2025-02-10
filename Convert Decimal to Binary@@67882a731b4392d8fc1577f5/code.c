@@ -8,6 +8,7 @@ int main() {
         s=r+(s*10);//r=1 then s=1 then r=1 then s= 1+10x+1=11 
         num=num/2;
     }
-    printf("%s", s);
+    printf("%d", s);
     return 0;
 }
+//did ulta bcz we print niche se uppar
