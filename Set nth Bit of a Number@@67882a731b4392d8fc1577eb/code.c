@@ -9,7 +9,7 @@ int main() {
     num = num | (1 << n);
 
     // Output the modified number
-    printf("%d\n", n, num);
+    printf("%d\n",num);
 
     return 0;
 }
