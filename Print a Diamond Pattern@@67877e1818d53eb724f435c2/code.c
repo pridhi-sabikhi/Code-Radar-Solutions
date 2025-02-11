@@ -10,7 +10,7 @@ int main()
         {
             printf(" ");
         }
-        for(int col=0; col<row+1; col++)
+        for(int col=0; col<2*row+1; col++)
         {
             printf("*"); //no need to print space before forward spaces are printed
         }
