@@ -16,6 +16,25 @@ int main()
         }
         printf("\n");
     }
-    //lower half rows=3 but print only 2
+    //lower half rows=3 but print only 2 skip 1st and longest row
+    for(int row=0; row<N; row++)
+    {
+        if(row==0)
+        {
+            continue; //w/m skip iteration
+        }
+        else
+        {
+        for(int col=0; col<row;col++)
+        {
+            printf(" ");
+        }
+        for(int col=0; col<2*N-row-1; col++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        }
+    }
     return 0;
 }
