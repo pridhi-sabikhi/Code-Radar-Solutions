@@ -7,7 +7,7 @@ int main()
     {
         for(int col=0; col<N-row; col++)
         {
-            printf("%d", col+1);
+            printf("%d ", col+1);
         }
         printf("\n");
     }
