@@ -2,7 +2,7 @@
 int isPrime(int num)
 {
     int c=0;
-    for (int i=2; i<=num/2; ++i)
+    for (int i=2; i<=num/2; i++)
     {
         if(num%i==0)
         c++;
@@ -12,15 +12,15 @@ int isPrime(int num)
     else 
     return 0;
 }
-int main()
-{
-    int t;
-    scanf("%d",&t);
-    while(t--)
-    {
-        int num;
-        scanf("%d", &num);
-        printf("%d\n", isPrime(num));
-    }
+// int main()
+// {
+//     int t;
+//     scanf("%d",&t);
+//     while(t--)
+//     {
+//         int num;
+//         scanf("%d", &num);
+//         printf("%d\n", isPrime(num));
+//     }
     
-}
+// }
