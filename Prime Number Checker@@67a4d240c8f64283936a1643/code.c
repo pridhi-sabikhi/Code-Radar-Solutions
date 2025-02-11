@@ -2,12 +2,12 @@
 int isPrime(int num)
 {
     int c=0;
-    for (int i=1; i<=num; i++)
+    for (int i=1; i<=num/2; i++)
     {
         if(num%i==0)
         c++;
     }
-    if(c==1)
+    if(c==2)
     return 1;
     else 
     return 0;
