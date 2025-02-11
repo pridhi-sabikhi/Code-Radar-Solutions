@@ -6,7 +6,7 @@ int main()
     scanf("%d", &N);
     for(int row=0; row<N;row++)
     {
-        start='A'
+        start='A';
         for(int col=0; col<N-row;col++)
         {
             printf("%c ",start);
