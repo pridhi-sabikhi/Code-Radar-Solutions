@@ -19,11 +19,7 @@ int main()
     //lower half rows=3 but print only 2 skip 1st and longest row
     for(int row=0; row<N; row++)
     {
-        if(row==0)
-        {
-            continue; //w/m skip iteration
-        }
-        else
+        if(!(row==0))
         {
         for(int col=0; col<row;col++)
         {
@@ -35,6 +31,10 @@ int main()
         }
         printf("\n");
         }
+    else
+    {
+        continue;
+    }
     }
     return 0;
 }
