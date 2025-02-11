@@ -6,7 +6,7 @@ int main()
     //upper half till longest line
     for(int row=0; row<N; row++)
     {
-        for(int col=0; col<n-row-1; col++)
+        for(int col=0; col<N-row-1; col++)
         {
             printf(" ");
         }
