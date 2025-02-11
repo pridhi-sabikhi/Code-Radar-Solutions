@@ -7,7 +7,7 @@ int isPrime(int num)
         if(num%i==0)
         c++;
     }
-    if(c==2)
+    if(c==1)
     return 1;
     else 
     return 0;
@@ -16,7 +16,7 @@ int main()
 {
     int t;
     scanf("%d",&t);
-    while(t++)
+    while(t--)
     {
         int num;
         scanf("%d", &num);
