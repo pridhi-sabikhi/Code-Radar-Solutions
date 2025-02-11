@@ -25,7 +25,7 @@ int main()
         {
             printf(" ");
         }
-        for(int col=0; col<(2*N)-row-1; col++)
+        for(int col=0; col<(2*N)-row-2; col++)
         {
             printf("*");
         }
