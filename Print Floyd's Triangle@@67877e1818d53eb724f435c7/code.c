@@ -9,7 +9,7 @@ int main()
     {
         for(int col=0; col<row+1;col++)
         {
-            printf("%d", start);
+            printf("%d ", start);
             start++;
         }
         printf("\n");
