@@ -1,10 +1,11 @@
 #include <stdio.h>
 int main() {
-    int a,b,temp;
+    int a,b;
     scanf("%d %d", &a, &b);
-    temp=a;
-    a=b;
-    b=temp;
+    a=a^b;
+    b=a^b;
+    a=b^a;
     printf("%d %d",a,b);
     return 0;
 }
+   
