@@ -5,10 +5,9 @@ int main() {
     // Input: the number and the bit position
     scanf("%d %d", &num, &n);
 
-    // Set the nth bit to 1 using bitwise OR
-    num = num | (1 << n);
+    num = num | (1 << n); //1 << n makes nth bit 1 then | se if nth bit was 0 then | krke make it 1 
+    //if it was 1 then | krke remain as 1
 
-    // Output the modified number
     printf("%d\n",num);
 
     return 0;
