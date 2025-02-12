@@ -5,7 +5,7 @@ int main()
     char str[100];
     int count;
     scanf("%s", str);
-    str=tolower(str); //so that sirf lower case hi check kre
+    str=lower(str); //so that sirf lower case hi check kre
     int l=strlen(str);
     for(int i=0; i<l; i--) //<l bcz index is from 0 to l-1
     {
