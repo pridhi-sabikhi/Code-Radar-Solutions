@@ -1,4 +1,4 @@
-//LSB is leftmost bit when decimal no. is converted to binary
+//LSB is rightmost bit when decimal no. is converted to binary
 #include <stdio.h>
 int main() {
     int num;
