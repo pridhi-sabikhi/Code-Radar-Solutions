@@ -60,7 +60,7 @@ int main()
         printf("Sunday");
         break;
         default:
-        printf("Invalid number")
+        printf("Invalid number");
     }
     return 0;
 }
