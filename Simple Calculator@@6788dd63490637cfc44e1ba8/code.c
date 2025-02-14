@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int num1, num2, add, sub,mul,div;
+    int num1, num2, ans;
     char ch;
     scanf("%d %d", &num1, &num2);
     scanf(" %c", &ch);
@@ -9,16 +9,16 @@ int main(){
     switch(ch)
     {
         case '+':
-        add=num1+num2;
-        printf("%d", add);
+        ans=num1+num2;
+        printf("%d", ans);
         break;  
         case '-':
-        sub=num1-num2;
-        printf("%d", sub);
+        ans=num1-num2;
+        printf("%d", ans);
         break;
         case '*':
-        mul=num1*num2;
-        printf("%d",mul);
+        ans=num1*num2;
+        printf("%d", ans);
         break;
         case '/':
         if(num2==0)
@@ -26,8 +26,8 @@ int main(){
             printf("error");
         }
         else{
-        div=num1/num2;
-        printf("%d", div);
+        ans=num1/num2;
+        printf("%d", ans);
         }
         break;
         default:
