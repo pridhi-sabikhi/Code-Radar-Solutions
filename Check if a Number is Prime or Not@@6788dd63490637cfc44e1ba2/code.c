@@ -25,17 +25,13 @@ int main() {
     int num;
     scanf("%d", &num);
     int c=0;
-    for(int i=1;i<=num*0.5;i++){
+    for(int i=2;i<=num*0.5;i++){
         if (num%i==0){
-         c++;
+        printf("Not Prime");
+        return 0;
         }
     }
-    if (c==2){
-        printf("Prime");
-    }
-    else
-    {
         printf("Not Prime");
-    }
+    
     return 0;
 }
