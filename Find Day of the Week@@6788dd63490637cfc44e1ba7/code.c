@@ -41,22 +41,22 @@ int main()
         case 1:
         printf("Monday");
         break;
-        case 1:
+        case 2:
         printf("Tuesday");
         break;
-        case 1:
+        case 3:
         printf("Wednesday");
         break;
-        case 1:
+        case 4:
         printf("Thursday");
         break;
-        case 1:
+        case 5:
         printf("Friday");
         break;
-        case 1:
+        case 6:
         printf("Saturday");
         break;
-        case 1:
+        case 7:
         printf("Sunday");
         break;
         default:
