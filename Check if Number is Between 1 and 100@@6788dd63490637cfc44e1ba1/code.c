@@ -5,7 +5,7 @@ int main() {
     for(int i=1;i<=100;i++){ //1 aur 100 include krna hai in range
          if (num==i){
             printf("In Range");
-            return 0; //jaise no. mil gya print in range then exit prog
+            return 0; //jaise no. mil gya print in range then exit prog  agr yeh na lgate toh after printing in range , out of range bhi print hota 
             //break ni lgaya bcz break se sirf out of for loop jaata hai and phir after for wala printf out of range print ho jaata hai
          }
     }
