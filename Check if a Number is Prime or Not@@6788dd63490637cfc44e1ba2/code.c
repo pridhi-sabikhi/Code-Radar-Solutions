@@ -25,7 +25,7 @@ int main() {
     int num;
     scanf("%d", &num);
     int c=0;
-    for(int i=1;i<=math.sqrt(num);i++){
+    for(int i=1;i<=int(math.sqrt(num));i++){
         if (num%i==0){
          c++;
         }
