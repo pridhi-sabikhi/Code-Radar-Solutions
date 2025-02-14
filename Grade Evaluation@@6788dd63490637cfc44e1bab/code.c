@@ -17,7 +17,6 @@ int main() {
         case 'F':printf("Fail");
         break;
         default:printf("Invalid grade");
-        break;
 //default mein bina break ke bhi sahi aayega bcz default is the last case so after default prog switch se bahr hi jayega 
         }
     return 0;
