@@ -52,7 +52,8 @@ int main(){
         case 11:
         printf("30");
         break;
-        case 2:
+        case 2:  //if year dekhna hota toh yahan year wali condi daalte
+        // if (year%4==0 && year%100!=0 || year%400==0) printf 28 else 29
         printf("28");
         break;
         default:
