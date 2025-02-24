@@ -17,8 +17,8 @@ int main()
         {
             if(arr[i]==arr[j])
             {
-                c++;
                 arr[j]=-1;//bcz no no. is -1 so made no. -1
+                c++;
             }
         }
         printf("%d %d\n", arr[i], c);
