@@ -18,10 +18,10 @@ int main()
             if(arr[j]==arr[i])
             {
                 c++;
-                arr[j]=-1;
+                arr[j]=-1;//bcz no no. is -1 so made no. -1
             }
         }
-        printf("%d %d", arr[i], c);
+        printf("%d %d\n", arr[i], c);
         }
     }
     return 0;
