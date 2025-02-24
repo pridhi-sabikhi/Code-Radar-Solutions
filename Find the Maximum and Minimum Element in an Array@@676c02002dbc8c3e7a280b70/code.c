@@ -5,7 +5,7 @@ int main()
     scanf("%d", &n);
     //first input n then declare array
     int arr[n];
-    for(int i=0; i<n; i++)//start from 1 bcz we already used arr[0]
+    for(int i=0; i<n; i++)//start from 0 vrna  error aa rha hai
     {
         scanf("%d", &arr[i]);
     }
