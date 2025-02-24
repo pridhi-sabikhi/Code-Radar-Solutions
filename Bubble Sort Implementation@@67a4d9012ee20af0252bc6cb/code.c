@@ -1,6 +1,8 @@
 int bubbleSort(int arr[], int n)
 {
-    for(int i=0; i<n; i++)
+    for(int rotation=0; rotation<n; rotation++)
+    {
+    for(int i=0; i<n-1; i++)
     {
         if(arr[i]>arr[i+1])
         {
@@ -10,6 +12,7 @@ int bubbleSort(int arr[], int n)
         }
     }
     return arr[n];
+}
 }
 void printArray(int arr[], int n)
 {
