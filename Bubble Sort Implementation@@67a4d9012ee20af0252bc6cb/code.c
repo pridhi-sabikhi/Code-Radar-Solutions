@@ -9,7 +9,7 @@ int bubbleSort(int arr[], int n)
             arr[i+1]=temp;
         }
     }
-    return arr;
+    return arr[];
 }
 void printArray(int arr[], int n)
 {
