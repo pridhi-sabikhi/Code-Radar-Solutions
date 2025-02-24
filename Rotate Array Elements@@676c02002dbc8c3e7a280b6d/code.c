@@ -16,7 +16,7 @@ int main()
     {
         int temp=arr[i];
         arr[i]=arr[n-i-1];
-        arr[n-i]=temp;
+        arr[n-i-1]=temp;
     }
     for(int i=0; i<n; i++)
     {
