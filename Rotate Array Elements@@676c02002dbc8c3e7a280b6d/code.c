@@ -10,11 +10,13 @@ int main()
     }
     int k;
     scanf("%d", &k);
+    //n is 5
+    //4th index is going to 1st i.e 5-4 index
     for(int i=0; i<n-2; i++)
     {
         int temp=arr[i];
-        arr[i]=arr[i+2];
-        arr[i+2]=temp;
+        arr[i]=arr[n-i];
+        arr[n-i]=temp;
     }
     for(int i=0; i<n; i++)
     {
