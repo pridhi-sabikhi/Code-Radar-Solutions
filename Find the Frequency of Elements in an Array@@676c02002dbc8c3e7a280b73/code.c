@@ -18,7 +18,7 @@ int main()
         if(arr[i]==arr[j])
         c++;
         }
-    }
     printf("%d %d", arr[i], c);
+    }
     return 0;
 }
