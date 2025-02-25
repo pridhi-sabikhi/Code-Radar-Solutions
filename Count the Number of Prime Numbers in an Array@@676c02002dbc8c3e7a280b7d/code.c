@@ -20,8 +20,7 @@ int main()
         if(c>2)//w/m it is prime no. 
         prime++;
     }
-    }
     printf("%d", prime);
-    
+    }
     return 0;
 }
