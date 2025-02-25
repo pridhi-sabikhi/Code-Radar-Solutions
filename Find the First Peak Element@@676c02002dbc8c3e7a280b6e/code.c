@@ -29,7 +29,7 @@ int main()
         //agr yeh bhi nhi toh check ke last no. is gretatest
         if(arr[n-1]>arr[n-2])
         {
-        printf("%d", arr[n-2]);
+        printf("%d", arr[n-1]);
         
         }
         //w.m no peak no.
