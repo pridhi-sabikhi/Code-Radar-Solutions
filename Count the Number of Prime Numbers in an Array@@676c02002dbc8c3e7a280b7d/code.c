@@ -10,7 +10,7 @@ int main()
     }
     for(int i=0; i<n; i++)//for array elements
     {
-        for(int j=0; j<=n; j++)
+        for(int j=1; j<=n; j++)//start checking prime from 1
         {
         if(arr[i]%j==0)
         c++;
