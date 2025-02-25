@@ -17,7 +17,7 @@ int main()
         if(arr[i]%j==0)
         c++;
         }
-        if(c>2)//w/m it is prime no. 
+        if(c==2)//w/m it is prime no. 
         prime++;
     }
     }
