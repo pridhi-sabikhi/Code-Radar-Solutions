@@ -1,27 +1,28 @@
 #include<stdio.h>
-#include<stdlib.h>
-int compare(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
-}
 int main()
 {
-    int n, c=0;
+    int n;
     scanf("%d", &n);
     int arr[n];
     for(int i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
     }
-    //sorting array
-    qsort(arr, n, sizeof(int), compare);
     for(int i=0; i<n; i++)
     {
-        for(int j=0; j<n; j++)
+        int c=0; //hr counting se pehle make count 0
+        if(arr[i]!=-1)//taaki jb no. -1 kiya tb vo count na ho
         {
-        if(arr[i]==arr[j])
-        c++;
+        for(int j=i+1; j<n; j++)//start j with index i+1 taaki jb -1 kre toh i wal no. -1 na ho jaye and starting wale chahe -1  na ho bcz unhe dubara count nhi krna hai 
+        {
+            if(arr[i]==arr[j])
+            {
+                c++;
+                arr[j]=-1;//bcz no no. is -1 so made no. -1
+            }
         }
-    printf("%d %d", arr[i], c);
+        printf("%d %d\n", arr[i], c);
+        }
     }
     return 0;
 }
