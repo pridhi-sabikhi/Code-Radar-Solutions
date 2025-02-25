@@ -10,7 +10,7 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
-        int c=0; //hr counting se pehle make count 0
+        int c=1; //1 bcz counting mein yeh n. then isse aage jitni baar yeh no. aayega unsbko count krna hai . aage wale toh ho jayenge but yeh wala nhi hoga so 1 
         if(arr[i]!=-1)//taaki jb no. -1 kiya tb vo count na ho
         {
         for(int j=i+1; j<n; j++)//start j with index i+1 taaki jb -1 kre toh i wal no. -1 na ho jaye and starting wale chahe -1  na ho bcz unhe dubara count nhi krna hai 
