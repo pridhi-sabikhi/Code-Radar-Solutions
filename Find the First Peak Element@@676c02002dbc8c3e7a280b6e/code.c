@@ -1,3 +1,4 @@
+//check ke better sol hoskta hai ya nhi
 //find if no. is greater than its neighbors
 #include<stdio.h>
 int main()
