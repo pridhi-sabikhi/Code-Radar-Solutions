@@ -1,3 +1,4 @@
+//find if no. is greater than its neighbors
 #include<stdio.h>
 int main()
 {
@@ -9,13 +10,12 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    if(arr[1]>arr[2] && arr[1]>arr[0])
-    printf("%d", arr[1]);
-    else if(arr[0]>arr[2] && arr[0]>arr[1])
-    printf("%d", arr[0]);
-    else if(arr[2]>arr[1] && arr[2]>arr[0])
-    printf("%d", arr[2]);
-    else
-    printf("-1");
+    for(int i=1; i<n-1; i++)//start from 1 bcz 0 kiya toh can't check i-1, n-1 bcz for last index  i+1 index hoga hi nhi
+    {
+        if(arr[i]>arr[i+1] && arr[i]>arr[i-1])
+        printf("%d", arr[i]);
+        return 0;
+    }
+    printf("-1"); //if no peak element
     return 0;
 }
