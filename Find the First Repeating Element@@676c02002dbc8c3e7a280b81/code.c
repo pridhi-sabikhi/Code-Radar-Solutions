@@ -19,7 +19,7 @@ int main()
                return 0;
             }
         }
+    }
         printf("-1"); //no repeating element
-        }
     return 0;
 }
