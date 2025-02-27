@@ -24,7 +24,7 @@ int main()
 
         if(arr[i]%j==0)
         {
-        c++;//yeh issliye kr rhe taaki agle if ko pta chale ke kb prime no. aaya hai
+        c=1;//marking as non prime
         break; //come out of inner loop and next no. pr chalo
         }
         }
