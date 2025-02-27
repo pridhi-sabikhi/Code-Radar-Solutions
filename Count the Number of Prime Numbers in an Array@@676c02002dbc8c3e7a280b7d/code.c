@@ -14,7 +14,7 @@ int main()
     for(int i=0; i<n; i++)//for array elements
     {
         int c=0;//for each element counting krni hai factors ki
-        int k=sqrt(arr[i]);  //bcz sqrt gives float toh int mein store kiya taaki loop chla ske
+        int k=(int)sqrt(arr[i]);  //bcz sqrt gives float toh int mein store kiya taaki loop chla ske
 
         if(arr[i]>1)//toh hi kro if number is not 1 bcz 1 is neither prime but vo condition bigarega
         {
