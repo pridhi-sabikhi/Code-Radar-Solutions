@@ -13,7 +13,7 @@ int main()
 
     for(int i=0; i<n; i++)//for array elements
     {
-        int c=0;//for each element counting krni hai factors ki
+        int c=0;//for each element pehle considering ke element is prime 
         int k=(int)sqrt(arr[i]);  //bcz sqrt gives float toh int mein store kiya taaki loop chla ske
 
         if(arr[i]>1)//toh hi kro if number is not 1 bcz 1 is neither prime but vo condition bigarega
@@ -26,6 +26,7 @@ int main()
         {
         c++;//yeh issliye kr rhe taaki agle if ko pta chale ke kb prime no. aaya hai
         break; //come out of inner loop and next no. pr chalo
+        }
         }
 
         if(c==0)//w/m it is prime no. 
