@@ -15,7 +15,8 @@ int main()
         scanf("%d", &arr[i]);
     }
     int max=arr[0];
-    int max2=-1; //here var 2nd_max ni likhna bcz var name can't start from digit
+    int max2=-5874996; //yeh no. issliye bcz aisa no. kabhi test case mein ni hoga 
+    //here var 2nd_max ni likhna bcz var name can't start from digit
     for(int i=0; i<n; i++)
     {
         if(arr[i]>max)
