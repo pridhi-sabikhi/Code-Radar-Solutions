@@ -19,11 +19,13 @@ int main()
         if(arr[i]>1)//toh hi kro if number is not 1 bcz 1 is neither prime but vo condition bigarega
         {
 
-        for(int j=2; j<k; j++)//start checking prime from 2 aur agr 2 se leke sqrt tk no number se div that means it is prime
+        for(int j=2; j<=k; j++)//start checking prime from 2 aur agr 2 se leke sqrt tk no number se div that means it is prime
         {
 
         if(arr[i]%j==0)
-        c++;
+        {
+        c++;//yeh issliye kr rhe taaki agle if ko pta chale ke kb prime no. aaya hai
+        break; //come out of inner loop and next no. pr chalo
         }
 
         if(c==0)//w/m it is prime no. 
