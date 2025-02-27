@@ -14,9 +14,9 @@ int main()
         int num=arr[i];
         while(num>0)
         {
-            r= n%10;
-            sum =sum + r;//+ aur = mein space ni daalana
-            n =n/10;// / aur = mein space ni daalana
+            r= num%10;
+            sum += r;//+ aur = mein space ni daalana
+            num /= 10;// / aur = mein space ni daalana
         }
         printf("%d ", sum);
     }
