@@ -14,7 +14,7 @@ int main()
         int c=0;//for each element counting krni hai factors ki
         if(arr[i]>1)//toh hi kro if number is not 1 bcz 1 is neither prime but vo condition bigarega
         {
-        for(int j=2; j<int(sqrt(n)); j++)//start checking prime from 2 aur agr 2 se leke sqrt tk no number se div that means it is prime
+        for(int j=2; j<(int(sqrt(n))); j++)//start checking prime from 2 aur agr 2 se leke sqrt tk no number se div that means it is prime
         {
         if(arr[i]%j==0)
         c++;
