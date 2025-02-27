@@ -3,37 +3,39 @@ int main()
 {
     int n;
     scanf("%d", &n);
+    //if array size is less than 2 then prnt -1 and exit
+    if(n<2)
+    {
+    printf("-1/n");
+    return 0;
+    }
     int arr[n];
     for(int i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
     }
     int max=arr[0];
+    int max2=-1; //here var 2nd_max ni likhna bcz var name can't start from digit
     for(int i=0; i<n; i++)
     {
         if(arr[i]>max)
         {
+            max2=max;
             max=arr[i];
         }
-    }
-    //to make max index =-1
-    for(int i=0; i<n; i++)
-    {
-        if(arr[i]==max)
+        else if(arr[i]>max2 && arr[i]!=max)
         {
-        arr[i]=-1;
-        max=-1;//bcz vrna max vo biggest no. stored rehta
+            max2=arr[i];
         }
     }
-    //now max is -1 so ab jo max nikalenge vo 2nd max hoga
-    for(int i=0; i<n; i++)
+    //if max2 is still-1  then there is no 2nd max
+    if(max2==-1)
     {
-        if(arr[i]>max)
-        {
-            max=arr[i];
-        }
+        printf("-1\n");
     }
-    printf("%d", max);// agr koi na hua toh -1 print hoga
-     
+    else
+    {
+        pritnf("%d", max2);
+    }
     return 0;
 }
