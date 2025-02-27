@@ -6,7 +6,7 @@ int main()
     //if array size is less than 2 then prnt -1 and exit
     if(n<2)
     {
-    printf("-1/n");
+    printf("-1\n");
     return 0;
     }
     int arr[n];
@@ -31,7 +31,7 @@ int main()
     //if max2 is still-1  then there is no 2nd max
     if(max2==-1)
     {
-        printf("-1\n");
+        printf("-1");
     }
     else
     {
