@@ -1,3 +1,4 @@
+//ditto same as Q1 bss usmein print in different lines . here print in same line
 #include<stdio.h>
 int main()
 {
@@ -34,7 +35,7 @@ int main()
 
     // Print the rotated array
     for (int i = 0; i < n; i++) {
-        printf("%d\n", arr[i]);
+        printf("%d", arr[i]);
     }
 
     return 0;
