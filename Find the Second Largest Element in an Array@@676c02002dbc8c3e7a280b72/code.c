@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<limits.h>
+#include<limits.h>//INT_MIN usekrna hai issliye yeh lgaya
 int main()
 {
     int n;
