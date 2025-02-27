@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<limits.h>
 int main()
 {
     int n;
@@ -15,7 +16,7 @@ int main()
         scanf("%d", &arr[i]);
     }
     int max=arr[0];
-    int max2=-5874996; //yeh no. issliye bcz aisa no. kabhi test case mein ni hoga 
+    int max2=INT_MIN; //yeh no. issliye bcz aisa no. kabhi test case mein ni hoga 
     //here var 2nd_max ni likhna bcz var name can't start from digit
     for(int i=0; i<n; i++)
     {
@@ -29,8 +30,8 @@ int main()
             max2=arr[i];
         }
     }
-    //if max2 is still-1  then there is no 2nd max
-    if(max2==-1)
+    //if max2 is still-5874996  then there is no 2nd max
+    if(max2==INT_MIN)
     {
         printf("-1");
     }
