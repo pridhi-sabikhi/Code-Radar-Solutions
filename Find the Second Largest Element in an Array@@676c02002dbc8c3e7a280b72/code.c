@@ -6,7 +6,7 @@ int main()
     //if array size is less than 2 then prnt -1 and exit
     if(n<2)
     {
-    printf("-1\n");
+    printf("-1");
     return 0;
     }
     int arr[n];
