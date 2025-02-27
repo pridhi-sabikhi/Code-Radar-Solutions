@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n, k, c=0;
+    int n, k;
     scanf("%d", &n);
     int arr[n];
     k=n/2;
@@ -11,6 +11,7 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
+        int c=0;//for every no. reset it to 0
         for(int j=0; j<n; j++)
         {
             if(arr[i]==arr[j])
