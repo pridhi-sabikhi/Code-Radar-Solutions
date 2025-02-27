@@ -1,4 +1,4 @@
-//same as 7th bss max ki jagah min
+//same as 7th bss max ki jagah min, min kijagah max , < ki jagah > and vice versa
 #include<stdio.h>
 #include<limits.h>//INT_MAX usekrna hai issliye yeh lgaya
 int main()
@@ -26,7 +26,7 @@ int main()
             min2=min;
             min=arr[i];
         }
-        else if(arr[i]>min2 && arr[i]!=min)
+        else if(arr[i]<min2 && arr[i]!=min)
         {
             min2=arr[i];
         }
