@@ -35,7 +35,7 @@ int main()
     }
     else
     {
-        pritnf("%d", max2);
+        printf("%d", max2);
     }
     return 0;
 }
