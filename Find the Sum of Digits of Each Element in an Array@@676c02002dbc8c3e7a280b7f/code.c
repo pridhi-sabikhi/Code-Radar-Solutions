@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>//bcz we need to use abs() to take absolute value in case of negative no.s
 int main()
 {
     int n;
