@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n, k;
+    int n;
     scanf("%d", &n);
     int arr[n];
-    k=n/2;
     for(int i=0; i<n; i++)
     {
         scanf("%d", &arr[i]);
@@ -19,7 +18,7 @@ int main()
                 c++;
             }
         }
-        if(c>k)
+        if(c>(n/2))
         {
             printf("%d", arr[i]);
             return 0;
