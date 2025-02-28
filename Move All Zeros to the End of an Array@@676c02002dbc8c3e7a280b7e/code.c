@@ -1,5 +1,5 @@
 #include<stdio.h>
-int new_array(int arr, int n)
+int new_array(int arr[], int n)
 {
     int end=n-1;
     for(int i=0; i<end; i++)//less than end taaki end wali 0s ko na chede
@@ -13,7 +13,7 @@ int new_array(int arr, int n)
         }
     }
 }
-int print(int arr, int n)
+int print(int arr[], int n)
 {
     for (int i=0; i<n; i++)
     {
