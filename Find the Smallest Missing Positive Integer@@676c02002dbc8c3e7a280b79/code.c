@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>  // For malloc and free
 
 void findSmallestMissingPositive(int arr[], int n) {
     // Rearrange the elements so that each element `x` is placed at index `x-1`
@@ -28,12 +29,19 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    int arr[n];
+    // Dynamically allocate memory for the array
+    int* arr = (int*)malloc(n * sizeof(int));
+    if (arr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1; // Exit if memory allocation fails
+    }
+
+    // Input the elements into the array
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
+    // Call the function to find the smallest missing positive integer
     findSmallestMissingPositive(arr, n);
-    
-    return 0;
-}
+
+    // Free
