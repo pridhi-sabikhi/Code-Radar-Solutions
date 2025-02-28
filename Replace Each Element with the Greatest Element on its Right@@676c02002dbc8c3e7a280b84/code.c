@@ -40,4 +40,4 @@ int main()
     }
     new_arr(arr, n);
     print(arr, n);
-}rna 
+}
