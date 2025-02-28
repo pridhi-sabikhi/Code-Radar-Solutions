@@ -16,15 +16,15 @@ int main()
     while(i<n)
     {
         int index= arr[i];
-        if(arr[i]==arr[index])
-        {
-            i++;
-        }
-        else
+        if(if index<n && arr[i]==arr[index])
         {//bcz no inbuilt swap funct issliye aisa krna padega
             int temp=arr[i];
             arr[i]=arr[index];
             arr[index]=temp;
+        }
+        else 
+        {
+            i++;//check next element
         }
     }
     //now element at arr[0] is the duplicate element 
