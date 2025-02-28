@@ -7,7 +7,7 @@ int new_arr(int arr[], int n)
         int maxi=INT_MIN;
         if(i==n-1)
         {
-            arr[i]=-1;
+            arr[n-1]=-1;
         }
         for(int j=i+1; j<n; j++)
         {
