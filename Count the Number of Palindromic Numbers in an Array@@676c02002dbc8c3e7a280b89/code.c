@@ -2,7 +2,7 @@
 int check(int arr[], int n)
 {
     int pali=0;
-    for( int i=0; i<n; i++)
+    for(int i=0; i<n; i++)
     {
         int num=arr[i];
         int rev=0, r=0;
@@ -24,7 +24,7 @@ int main()
     int arr[n];
     for(int i=0;i<n; i++)
     {
-        scanf("%d", &n);
+        scanf("%d", &arr[i]);
     }
     int ans=check(arr, n);
     printf("%d", ans);
