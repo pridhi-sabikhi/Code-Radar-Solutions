@@ -1,26 +1,32 @@
-//c++ ke hw Qs mein hai but issmein range is from 1 to n-1 
-//using sort and swap method
-//if n=5 i.e. 5 elements no.s then no. are from 1 to 4
-//hr no. ko uss index pr daalo then jo no.bachega on index 0 vo duplicate hoga bcz 0 element nhi hai and n-1 index tk n-1 elements aa jayenge 
-//inn mein while lgta hai for loop ni
-//oth index pr rho hamesha
 #include<stdio.h>
-int main()
-{
+
+int main() {
     int n;
     scanf("%d", &n);
+    
     int arr[n];
-    for(int i=0; i<n; i++)
-    {
+    for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    while(arr[0]!=arr[arr[0]]) //jb tk no. aur uska index no. same nhi hote sbke  tb tk swap
-    {//bcz no inbuilt funct to swap issliye aise kr rhe hai
-        int temp=arr[0];
-        arr[0]=arr[arr[0]];
-        arr[arr[0]]=temp;
+
+    // Start checking for duplicates
+    int i = 0;
+    while (i < n) {
+        int index = arr[i]; // Use arr[i] as the index
+
+        // Make sure index is within valid bounds
+        if (index < n && arr[i] != arr[index]) {
+            // Swap if values are not equal
+            int temp = arr[i];
+            arr[i] = arr[index];
+            arr[index] = temp;
+        } else {
+            // If duplicate is found or already visited, move to next element
+            i++;
+        }
     }
-    //now element at arr[0] is the duplicate element 
+
+    // After the loop, arr[0] should hold the duplicate value
     printf("%d", arr[0]);
     return 0;
 }
