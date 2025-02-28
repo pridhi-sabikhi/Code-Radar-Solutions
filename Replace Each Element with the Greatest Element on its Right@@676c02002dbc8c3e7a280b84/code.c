@@ -9,7 +9,7 @@ int new_arr(int arr[], int n)
         {
             arr[n-1]=-1;
         }
-        else
+        else//isko else mein daalo after making last -1 phir se max nikalne lg jaate hai 
         {
         for(int j=i+1; j<n; j++)
         {
@@ -40,4 +40,4 @@ int main()
     }
     new_arr(arr, n);
     print(arr, n);
-}
+}rna 
