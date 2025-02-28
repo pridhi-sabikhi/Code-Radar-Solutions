@@ -36,7 +36,7 @@ int main() {
     }
 
     int result = highest_frequency_element(arr, n);
-    printf("Element with the highest frequency: %d\n", result);
+    printf("%d\n", result);
 
     return 0;
 }
