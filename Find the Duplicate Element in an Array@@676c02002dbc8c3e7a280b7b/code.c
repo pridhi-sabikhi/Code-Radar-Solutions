@@ -16,7 +16,7 @@ int main()
     while(i<n)
     {
         int index= arr[i];
-        if(if index<n && arr[i]==arr[index])
+        if(index<n && arr[i]==arr[index])
         {//bcz no inbuilt swap funct issliye aisa krna padega
             int temp=arr[i];
             arr[i]=arr[index];
