@@ -27,6 +27,6 @@ int main()
         scanf("%d", &n);
     }
     int ans=check(arr, n);
-    printf("%d", pali);
+    printf("%d", ans);
     return 0;
 }
