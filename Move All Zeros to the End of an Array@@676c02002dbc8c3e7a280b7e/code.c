@@ -1,16 +1,18 @@
 #include<stdio.h>
 int new_array(int arr[], int n)
 {
-    int end=n-1;
-    for(int i=0; i<end; i++)//less than end taaki end wali 0s ko na chede
+    int count=0;
+    for(int i=0; i<n; i++)
     {
-        if (arr[i]==0)
+        if (arr[i]!=0)
         {
-            int temp=arr[i];
-            arr[i]=arr[end];
-            arr[end]=temp;
-            end--;//end piche jaayega
+            arr[count++]=arr[i];// i.e startint pr vo element daaldo
         }
+    }
+    //now  fill remaining indexes with 0s
+    while(count<n)
+    {
+        arr[count++]=0;
     }
 }
 int print(int arr[], int n)
