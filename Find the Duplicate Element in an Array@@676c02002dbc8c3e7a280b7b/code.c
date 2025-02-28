@@ -17,8 +17,10 @@ int main()
     {
         int index= arr[i];
         if(arr[i]!=arr[index])
-        {
-            swap(arr[i], arr[index]);
+        {//bcz no inbuilt swap funct issliye aisa krna padega
+            int temp=arr[i];
+            arr[i]=arr[index];
+            arr[index]=temp;
         }
         else 
         {
