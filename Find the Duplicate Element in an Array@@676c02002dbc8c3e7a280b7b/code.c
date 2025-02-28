@@ -6,12 +6,12 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i=0;
     scanf("%d", &n);
     int arr[n];
-    for(int i=0; i<n; i++)
+    for(int a=0; a<n; a++)//a liya bcz i used tha already
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[a]);
     }
     while(i<n)
     {
