@@ -9,6 +9,8 @@ int new_arr(int arr[], int n)
         {
             arr[n-1]=-1;
         }
+        else
+        {
         for(int j=i+1; j<n; j++)
         {
             if(arr[j]>maxi)
@@ -17,6 +19,7 @@ int new_arr(int arr[], int n)
             }
         }
         arr[i]=maxi;
+    }
     }
 }
 int print(int arr[], int n)
