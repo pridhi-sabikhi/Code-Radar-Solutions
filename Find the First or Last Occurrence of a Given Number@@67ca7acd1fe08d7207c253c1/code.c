@@ -1,4 +1,4 @@
-int findOccurence(int arr[], int n, int target, char mode)
+int findOccurrence(int arr[], int n, int target, char mode)
 {
     int k=-1;
     for(int i=0; i<n; i++)
