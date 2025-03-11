@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void printarray(int arr[], int n)
+void printArray(int arr[], int n)
 {
     for(int i=0; i<n; i++)
     {
