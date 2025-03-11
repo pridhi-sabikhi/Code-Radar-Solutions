@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-
+void printarray(int arr[], int n)
+{
+    for(int i=0; i<n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+}
 void insertionSort(char arr[][100], int n) {
     for (int i = 1; i < n; i++) {
         char key[100];  // Temporary variable to hold the current string
@@ -15,4 +21,5 @@ void insertionSort(char arr[][100], int n) {
         }
         strcpy(arr[j + 1], key);  // Place the key in its correct position
     }
+    
 }
