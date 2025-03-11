@@ -4,7 +4,7 @@ void printArray(char arr[], int n)
 {
     for(int i=0; i<n; i++)
     {
-        printf("%s ", arr[i]);
+        printf("%d ", arr[i]);
     }
 }
 void insertionSort(char arr[][100], int n) {
