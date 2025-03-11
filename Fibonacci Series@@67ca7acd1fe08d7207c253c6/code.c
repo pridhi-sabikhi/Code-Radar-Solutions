@@ -18,7 +18,7 @@ int fibonacciSeries(int n)
     for(int i=0; i<n; i++)
     {
         int ans=fibo(i);
-        printf("%d", ans);
+        printf("%d ", ans);
     }
     return 0;
 }
