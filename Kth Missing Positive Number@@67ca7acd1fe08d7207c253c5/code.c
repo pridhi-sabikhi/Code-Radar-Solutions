@@ -23,13 +23,15 @@
 int findKthMissing(int arr[], int n, int k)
 {
     int start=1, c=0;
-    for(int i=0; i<n; i++)
+    for(int i=0; i<n;)
     {
         if(start == arr[i])
         {
             start++;
+            i++; //if found tohi go to next element vrna ni
         }
-        else{
+        else
+        {
             c++;
             if(c==k)
             return start;
