@@ -33,6 +33,8 @@ int findKthMissing(int arr[], int n, int k)
             c++;
             if(c==k)
             return start;
+            else
+            start++;
         }
 
     }
