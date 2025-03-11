@@ -15,7 +15,7 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-int findKthSmallest(int arr[], int n, int k) {
+int kthSmallest(int arr[], int n, int k) {
     // Check if k is out of range
     if (k < 1 || k > n) {
         return -1;  // k is out of range
