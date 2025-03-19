@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<math.h> //sqrt use krna hai
+#include<cmath.h> //sqrt use krna hai
 int main()
 {
     int n, prime=0;
