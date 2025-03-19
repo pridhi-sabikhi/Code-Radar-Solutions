@@ -25,6 +25,7 @@ int main()
             diff=abs(diff);
             if(diff<min)
             {
+                min=diff; //agr yeh nhi kiya toh ans glt aayega bcz phirhr diff < min hoga
                 a=arr[i];
                 b=arr[j];                
             }
