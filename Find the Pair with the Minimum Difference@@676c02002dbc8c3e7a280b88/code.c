@@ -22,7 +22,8 @@ int main()
         for(int j=i+1; j<n; j++)
         {
             int diff= arr[i]-arr[j];
-            if(abs(diff)<min)
+            diff=abs(diff);
+            if(diff<min)
             {
                 a=arr[i];
                 b=arr[j];                
