@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<cmath.h> //sqrt use krna hai
+#include<math.h> //sqrt use krna hai
 int main()
 {
     int n, prime=0;
@@ -14,22 +14,19 @@ int main()
     for(int i=0; i<n; i++)//for array elements
     {
         int c=0;//for each element pehle considering ke element is prime 
-        int k=(int)sqrt(arr[i]);  //bcz sqrt gives float toh int mein store kiya taaki loop chla ske
-
         if(arr[i]>1)//toh hi kro if number is not 1 bcz 1 is neither prime but vo condition bigarega
         {
 
-        for(int j=2; j<=k; j++)//start checking prime from 2 aur agr 2 se leke sqrt tk no number se div that means it is prime
+        for(int j=1; j<=arr[i]; j++)
         {
 
         if(arr[i]%j==0)
         {
-        c=1;//marking as non prime
-        break; //come out of inner loop and next no. pr chalo
+        c++;
         }
         }
 
-        if(c==0)//w/m it is prime no. 
+        if(c==2)//w/m it is prime no. 
         prime++;
         }
     }
