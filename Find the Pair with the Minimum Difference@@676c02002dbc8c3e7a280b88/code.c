@@ -11,6 +11,12 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
+    //if array has only 1 element then ans is -1 
+    if(n==1)
+    {
+        printf("-1");
+        return 0;
+    }
     for(int i=0; i<n; i++)
     {
         for(int j=i+1; j<n; j++)
