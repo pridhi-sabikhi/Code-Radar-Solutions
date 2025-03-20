@@ -34,23 +34,3 @@ void caesarCipher(char *message, int shift) {
     }
 }
 
-int main() {
-    char message[100];
-    int shift;
-
-    // Input the message and the shift value
-    fgets(message, sizeof(message), stdin);
-    // Remove the newline character from fgets
-    message[strcspn(message, "\n")] = 0;
-
-    
-    scanf("%d", &shift);
-
-    // Encrypt the message
-    caesarCipher(message, shift);
-
-    // Output the encrypted message
-    printf("%s\n", message);
-
-    return 0;
-}
