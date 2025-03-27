@@ -1,3 +1,5 @@
+
+//almost same as 6 Q find freq 
 #include<stdio.h>
 #include<limits.h>
 int main()
