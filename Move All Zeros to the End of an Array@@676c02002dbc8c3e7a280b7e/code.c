@@ -32,7 +32,7 @@ int new_array(int arr[], int n)
     // {
     //     arr[count++]=0;
     // }
-}
+
 int print(int arr[], int n)
 {
     for (int i=0; i<n; i++)
