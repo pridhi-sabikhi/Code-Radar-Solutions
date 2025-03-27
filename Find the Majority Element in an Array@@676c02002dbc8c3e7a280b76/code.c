@@ -22,11 +22,12 @@ int main()
                 arr[j]=INT_MIN;
             }
         }
-        }
+        
         if(c>(n/2))
         {
             printf("%d", arr[i]);
             return 0;
+        }
         }
     }
     //full mein aisa koi nhi mila
