@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to perform insertion sort on an array of integers
-void insertionsort(int arr[], int n) {
+void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i]; // The element to be inserted
         int j = i - 1;
