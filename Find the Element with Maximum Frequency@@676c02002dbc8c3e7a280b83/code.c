@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &N);
     
     int nums[N]; // Assuming the maximum size of the array is 100000
-    int frequency[] = {0}; // Frequency array to count occurrences (assuming numbers are in the range [0, 100000])
+    int frequency[100001] = {0}; // Frequency array to count occurrences (assuming numbers are in the range [0, 100000])
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
