@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int compare(const void *a, const void *b) {
+    // Compare function for sorting pairs
+    int *pairA = (int *)a;
+    int *pairB = (int *)b;
+    
+    if (pairA[0] != pairB[0]) {
+        return pairA[0] - pairB[0]; // Sort by first element
+    }
+    return pairA[1] - pairB[1]; // Sort by second element
+}
+
 int main() {
     int N, T;
     scanf("%d", &N);
@@ -45,6 +56,9 @@ int main() {
             seen[arr[i] + 1000]++; // Offset by 1000 to handle negative indices
         }
     }
+
+    // Sort the pairs
+    qsort(foundPairs, pairCount, sizeof(foundPairs[0]), compare);
 
     // Output the pairs
     for (int i = 0; i < pairCount; i++) {
