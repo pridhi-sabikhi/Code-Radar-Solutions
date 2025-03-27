@@ -19,7 +19,7 @@ int main()
 
     if(arr[0]>arr[1])
     {
-        printf("%d", arr[0])
+        printf("%d", arr[0]);
         return 0;
     }
     //if nhi then check mid mein
