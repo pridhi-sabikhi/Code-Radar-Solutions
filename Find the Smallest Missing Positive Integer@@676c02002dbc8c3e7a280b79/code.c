@@ -1,9 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-int compare(void const *a, void const *b)
-{
-    return (*(int *)a- *(int *)b);
-}
+
 int main() {
     int N;
     scanf("%d", &N);
@@ -15,16 +11,15 @@ int main() {
         scanf("%d", &nums[i]);
     }
 
-    // Rearranging the array
-    // for (int i = 0; i < N; i++) {
-    //     while (nums[i] > 0 && nums[i] <= N && nums[nums[i] - 1] != nums[i]) {
-    //         // Swap nums[i] with nums[nums[i] - 1]
-    //         int temp = nums[i];
-    //         nums[i] = nums[temp - 1];
-    //         nums[temp - 1] = temp;
-    //     }
-    // }
-    qsort(nums, N, sizeof(int), compare);
+    //Rearranging the array
+    for (int i = 0; i < N; i++) {
+        while (nums[i] > 0 && nums[i] <= N && nums[nums[i] - 1] != nums[i]) {
+            // Swap nums[i] with nums[nums[i] - 1]
+            int temp = nums[i];
+            nums[i] = nums[temp - 1];
+            nums[temp - 1] = temp;
+        }
+    }
 
     // Finding the smallest missing positive integer
     for (int i = 0; i < N; i++) {
