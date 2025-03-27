@@ -23,26 +23,15 @@ int main() {
 
         // Check if the complement has been seen
         if (complement >= -1000 && complement <= 1000 && seen[complement + 1000] > 0) {
-            // Check if the pair is unique
-            int isUnique = 1;
-            for (int j = 0; j < pairCount; j++) {
-                if ((foundPairs[j][0] == arr[i] && foundPairs[j][1] == complement) ||
-                    (foundPairs[j][0] == complement && foundPairs[j][1] == arr[i])) {
-                    isUnique = 0;
-                    break;
-                }
+            // Store the pair in ascending order
+            if (arr[i] < complement) {
+                foundPairs[pairCount][0] = arr[i];
+                foundPairs[pairCount][1] = complement;
+            } else {
+                foundPairs[pairCount][0] = complement;
+                foundPairs[pairCount][1] = arr[i];
             }
-            if (isUnique) {
-                // Store the pair in ascending order
-                if (arr[i] < complement) {
-                    foundPairs[pairCount][0] = arr[i];
-                    foundPairs[pairCount][1] = complement;
-                } else {
-                    foundPairs[pairCount][0] = complement;
-                    foundPairs[pairCount][1] = arr[i];
-                }
-                pairCount++;
-            }
+            pairCount++;
         }
 
         // Mark the current number as seen
@@ -53,7 +42,17 @@ int main() {
 
     // Output the pairs
     for (int i = 0; i < pairCount; i++) {
-        printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
+        // Check for duplicates in the output
+        int isDuplicate = 0;
+        for (int j = 0; j < i; j++) {
+            if (foundPairs[i][0] == foundPairs[j][0] && foundPairs[i][1] == foundPairs[j][1]) {
+                isDuplicate = 1;
+                break;
+            }
+        }
+        if (!isDuplicate) {
+            printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
+        }
     }
 
     return 0;
