@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 int mountainPeak(int N) {
     char str[12]; // Enough to hold up to 10 digits + null terminator
     sprintf(str, "%d", N); // Convert integer to string
