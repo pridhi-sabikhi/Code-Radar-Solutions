@@ -9,11 +9,11 @@ int main() {
         {
             if(col%2==0)
         {
-            printf("*");
+            printf("%d", row+1);
         }
         else
         {
-            printf("%d",row+1);
+            printf("*");
         }
         }
          printf("\n");
