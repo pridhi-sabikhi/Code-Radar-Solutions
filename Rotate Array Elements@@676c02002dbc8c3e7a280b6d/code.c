@@ -23,14 +23,14 @@ int main() {
         if(i==n-1) //last element
         {
             temp=arr[i];
-            arr[i]=arr[0];
-            arr[0]=temp;
+            arr[i]=arr[1];
+            arr[1]=temp;
         }
         else if(i==n-2)// second last element
         {
             temp=arr[i];
-            arr[i]=arr[1];
-            arr[1]=temp;
+            arr[i]=arr[0];
+            arr[0]=temp;
         }
         else 
         {
