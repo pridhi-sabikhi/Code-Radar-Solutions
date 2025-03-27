@@ -79,5 +79,4 @@ int mountainPeak(int N) {
 }
 
 
-    return -1; // Not a mountain
-}
+   
