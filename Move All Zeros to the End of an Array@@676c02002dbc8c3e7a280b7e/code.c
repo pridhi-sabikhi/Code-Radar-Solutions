@@ -13,7 +13,8 @@ int new_array(int arr[], int n)
     }
     while(count>=0)//ab 0 index tkk sbhi mein 0 daal do 
     {
-        arr[count--]=0;
+        arr[count]=0;
+        count--;
     }
 }
 
