@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<limits.h>
 int main()
 {
     int n;
@@ -10,13 +11,17 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
-        int c=0;//for every no. reset it to 0
-        for(int j=0; j<n; j++)
+        int c=1;//for every no. reset it to 0
+        if(arr[i]!=INT_MIN)
+        {
+        for(int j=1; j<n; j++)
         {
             if(arr[i]==arr[j])
             {
                 c++;
+                arr[j]=INT_MIN;
             }
+        }
         }
         if(c>(n/2))
         {
