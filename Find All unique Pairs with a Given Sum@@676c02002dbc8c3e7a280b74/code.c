@@ -39,7 +39,7 @@ void findUniquePairs(int arr[], int n, int target)
         printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
     }
 
-if(seen[complement] <= 1000 && seen[complement + 1000] > 0) {
+if(foundPairs[complement] <= 1000 && foundPairs[complement + 1000] > 0) {
             // Store the pair in ascending order
             if (arr[i] < complement) {
                 foundPairs[pairCount][0] = arr[i];
