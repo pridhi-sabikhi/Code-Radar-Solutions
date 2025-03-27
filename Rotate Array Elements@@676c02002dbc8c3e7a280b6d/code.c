@@ -18,27 +18,22 @@ int main() {
 
     // Create a temporary array to hold the rotated values
     int temp=0;
-    for(int i=0; i<n; i++)
-    {
-        if(i==n-1) //last element
-        {
-            temp=arr[i];
-            arr[i]=arr[1];
+            temp=arr[n-1];
+            arr[n-1]=arr[1];
             arr[1]=temp;
-        }
-        else if(i==n-2)// second last element
-        {
-            temp=arr[i];
-            arr[i]=arr[0];
+        
+            temp=arr[n-2];
+            arr[n-2]=arr[0];
             arr[0]=temp;
-        }
-        else 
+        
+       for(int i=2; i<n; i++)
+    
         {
             temp=arr[i];
             arr[i]=arr[i+k];
             arr[i+k]=arr[i];
         }
-    }
+    
 
     // // Copy the last k elements to the beginning of the temp array
     // for (int i = 0; i < k; i++) {
@@ -59,6 +54,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         printf("%d\n", arr[i]);
     }
+}
 
     return 0;
-}
