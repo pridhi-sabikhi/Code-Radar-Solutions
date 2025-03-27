@@ -22,8 +22,3 @@ int finalEnergy(int clouds[], int n, int k) {
     return energy; // Return the remaining energy
 }
 
-
-    printf("%d\n", energyLeft);
-
-    return 0;
-}
