@@ -17,6 +17,7 @@ int new_array(int arr[], int n)
         count--;
 
     }
+}
 
     // int count=0;
     // for(int i=0; i<n; i++)
