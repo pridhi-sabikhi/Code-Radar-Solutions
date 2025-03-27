@@ -5,8 +5,8 @@ int main() {
     int N;
     scanf("%d", &N);
     
-    int nums[100000]; // Assuming the maximum size of the array is 100000
-    int frequency[100001] = {0}; // Frequency array to count occurrences (assuming numbers are in the range [0, 100000])
+    int nums[N]; // Assuming the maximum size of the array is 100000
+    int frequency[N] = {0}; // Frequency array to count occurrences (assuming numbers are in the range [0, 100000])
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
@@ -20,7 +20,7 @@ int main() {
     int result = INT_MAX; // Initialize to maximum possible integer
 
     // Find the element with the maximum frequency
-    for (int i = 0; i <= 100000; i++) {
+    for (int i = 0; i <= N; i++) {
         if (frequency[i] > maxFrequency) {
             maxFrequency = frequency[i];
             result = i; // Update result to the current number
