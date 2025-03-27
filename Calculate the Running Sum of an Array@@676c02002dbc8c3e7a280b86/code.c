@@ -11,11 +11,13 @@ int main() {
     for (int i = 0; i < N; i++) {
         scanf("%d", &nums[i]);
     }
-
+    int sum=0;
     // Calculate the running sum
-    runningSum[0] = nums[0]; // The first element is the same
+    //runningSum[0] = nums[0]; // The first element is the same
     for (int i = 1; i < N; i++) {
-        runningSum[i] = runningSum[i - 1] + nums[i]; // Add the current element to the previous running sum
+        sum=sum+arr[i];
+        runningSum[i]=sum;
+        //runningSum[i] = runningSum[i - 1] + nums[i]; // Add the current element to the previous running sum
     }
 
     // Output the running sum array
