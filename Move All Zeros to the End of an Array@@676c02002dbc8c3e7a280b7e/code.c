@@ -3,7 +3,7 @@ int new_array(int arr[], int n)
 {
     //if want to move all 0s to starting and koi order no. ni change krna 
     int count=n-1;
-    for(int i=n-1; i>0; i++)//start checking from n-1 bcz reverse mein order ni change krna
+    for(int i=n-1; i>0; i--)//start checking from n-1 bcz reverse mein order ni change krna
     {
         if(arr[i]!=0)
         {
