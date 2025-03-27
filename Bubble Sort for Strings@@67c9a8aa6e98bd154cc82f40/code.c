@@ -1,5 +1,6 @@
-// #include<stdio.h>
-// #include <string.h>
+ //must to write chahe given code snippet mein given haai but write vrna error 
+ #include<stdio.h>
+ #include <string.h>
 void bubbleSort(char arr[][100], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
