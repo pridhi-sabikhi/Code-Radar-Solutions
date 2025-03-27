@@ -18,7 +18,6 @@ int main()
             if(arr[i]==arr[j])
             {
                 c++;
-                arr[j]=INT_MIN;
             }
         }
         
