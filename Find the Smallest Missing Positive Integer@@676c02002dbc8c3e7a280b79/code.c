@@ -4,7 +4,7 @@ int main() {
     int N;
     scanf("%d", &N);
     
-    int nums[100000]; // Assuming the maximum size of the array is 100000
+    int nums[N]; // Assuming the maximum size of the array is 100000
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
