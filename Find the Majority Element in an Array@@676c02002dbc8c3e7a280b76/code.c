@@ -11,9 +11,8 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
-        int c=1;//for every no. reset it to 0
-        if(arr[i]!=INT_MIN)
-        {
+        int c=0;//for every no. reset it to 0
+        
         for(int j=1; j<n; j++)
         {
             if(arr[i]==arr[j])
@@ -28,7 +27,7 @@ int main()
             printf("%d", arr[i]);
             return 0;
         }
-        }
+        
     }
     //full mein aisa koi nhi mila
     printf("-1");
