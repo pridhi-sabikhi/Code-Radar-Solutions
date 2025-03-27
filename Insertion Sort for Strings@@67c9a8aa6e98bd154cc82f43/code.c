@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void insertionsort(char arr[][100], int n) {
+void insertionSort(char arr[][100], int n) {
     for (int i = 1; i < n; i++) {
         char key[100];
         strcpy(key, arr[i]); // Store the current string to be inserted
