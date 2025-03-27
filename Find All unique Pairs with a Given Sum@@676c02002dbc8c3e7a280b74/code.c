@@ -9,7 +9,8 @@ int compare(const void *a, const void *b) {
 }
 
 // Function to find unique pairs that sum to the target
-void findUniquePairs(int arr[], int n, int target) {
+void findUniquePairs(int arr[], int n, int target) 
+{
     // Sort the array to handle duplicates easily
     qsort(arr, n, sizeof(int), compare);
 
@@ -37,7 +38,7 @@ void findUniquePairs(int arr[], int n, int target) {
     for (int i = 0; i < pairCount; i++) {
         printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
     }
-}
+
 if(seen[complement] <= 1000 && seen[complement + 1000] > 0) {
             // Store the pair in ascending order
             if (arr[i] < complement) {
@@ -55,7 +56,7 @@ if(seen[complement] <= 1000 && seen[complement + 1000] > 0) {
         {
             seen[arr[i] + 1000]++; // Offset by 1000 to handle negative indices
         }
-    
+  
 
     // Sort the pairs
     qsort(foundPairs, pairCount, sizeof(foundPairs[0]), compare);
