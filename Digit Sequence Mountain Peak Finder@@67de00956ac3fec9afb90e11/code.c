@@ -33,3 +33,4 @@ int mountainPeak(int N) {
     if (i == length - 1) {
         return str[i] - '0'; // Return the peak digit as an integer
     }
+}
