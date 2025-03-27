@@ -1,4 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+// Comparison function for sorting pairs
+int compare(const void *a, const void *b) {
+    int *pairA = (int *)a;
+    int *pairB = (int *)b;
+
+    if (pairA[0] != pairB[0]) {
+        return pairA[0] - pairB[0]; // Sort by first element
+    }
+    return pairA[1] - pairB[1]; // Sort by second element
+}
 
 int main() {
     int N, T;
@@ -40,22 +52,12 @@ int main() {
         }
     }
 
+    // Sort the pairs
+    qsort(foundPairs, pairCount, sizeof(foundPairs[0]), compare);
+
     // Output the pairs
     for (int i = 0; i < pairCount; i++) {
-        // Check for duplicates in the output
-        int isDuplicate = 0;
-        for (int j = 0; j < i; j++) {
-            if (foundPairs[i][0] == foundPairs[j][0] && foundPairs[i][1] == foundPairs[j][1]) {
-                isDuplicate = 1;
-                break;
-            }
-        }
-        if (!isDuplicate) {
-            if(foundPairs[i][0]<foundPairs[i][1])
-            printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
-            else
-            printf("%d %d\n", foundPairs[i][1], foundPairs[i][0]);
-        }
+        printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
     }
 
     return 0;
