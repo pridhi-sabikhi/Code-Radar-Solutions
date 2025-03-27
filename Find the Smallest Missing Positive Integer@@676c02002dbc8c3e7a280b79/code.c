@@ -1,7 +1,7 @@
 #include <stdio.h>
 int compare(void const *a, void const *b)
 {
-    retunr (*(int *)a- *(int *)b);
+    return (*(int *)a- *(int *)b);
 }
 int main() {
     int N;
