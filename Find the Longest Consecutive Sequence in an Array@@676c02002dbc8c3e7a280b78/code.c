@@ -14,7 +14,7 @@ int main() {
         return 0;
     }
 
-    int nums[100000]; // Assuming the maximum size of the array is 100000
+    int nums[N]; // Assuming the maximum size of the array is 100000
     for (int i = 0; i < N; i++) {
         scanf("%d", &nums[i]);
     }
