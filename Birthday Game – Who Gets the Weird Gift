@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int findPrankReceiver(int n, int m, int s) {
+    // Calculate the final position using modular arithmetic
+    return (s - 1 + m - 1) % n + 1; // Convert to zero-based, calculate, then convert back to one-based
+}
