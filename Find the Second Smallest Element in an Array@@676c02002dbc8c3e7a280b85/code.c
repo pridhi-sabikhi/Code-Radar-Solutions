@@ -16,7 +16,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    int min=arr[0];
+    int min=INT_MAX;
     int min2=INT_MAX; //yeh no. issliye bcz aisa no. kabhi test case mein ni hoga 
     //here var 2nd_max ni likhna bcz var name can't start from digit
     for(int i=0; i<n; i++)
