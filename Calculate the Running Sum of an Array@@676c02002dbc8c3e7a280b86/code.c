@@ -15,7 +15,7 @@ int main() {
     // Calculate the running sum
     //runningSum[0] = nums[0]; // The first element is the same
     for (int i = 1; i < N; i++) {
-        sum=sum+arr[i];
+        sum=sum+nums[i];
         runningSum[i]=sum;
         //runningSum[i] = runningSum[i - 1] + nums[i]; // Add the current element to the previous running sum
     }
