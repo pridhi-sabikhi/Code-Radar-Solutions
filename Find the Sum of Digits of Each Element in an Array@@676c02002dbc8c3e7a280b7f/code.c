@@ -12,7 +12,7 @@ int main()
     for(int i=0; i<n; i++)
     {
         int sum=0, r=0; //for each element sum ki value 0 kro
-        int num=abs(arr[i]);//abs value le rhe ke agr element is -12 toh sum 3 aaye 
+        arr[i]=abs(arr[i]);//abs value le rhe ke agr element is -12 toh sum 3 aaye 
         while(num>0)//yahan n>0 ni likh jaana glti se
         {
             r= num%10;
