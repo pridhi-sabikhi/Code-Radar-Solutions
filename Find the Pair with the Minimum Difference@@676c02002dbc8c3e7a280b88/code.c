@@ -1,12 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int compare(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
-}
+ #include <stdlib.h>
+#include<limits.h>
+// int compare(const void *a, const void *b) {
+//     return (*(int *)a - *(int *)b);
+// }
 
 int main() {
-    int N;
+    int N, first, second;
+    int min=INT_MAX;
     scanf("%d", &N);
     
     if (N < 2) {
@@ -14,30 +15,47 @@ int main() {
         return 0;
     }
 
-    int nums[100]; // Assuming the maximum size of the array is 100
+    int nums[N]; // Assuming the maximum size of the array is 100
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
         scanf("%d", &nums[i]);
     }
+    for(int i=0; i<n; i++)
+    {
+        for(int j=i+1; j<n; j++)
+        {
+            int diff=arr[i]-arr[j];
+            if(abs(diff)<min)
+            {
+                min=diff;
+                first=arr[i];
+                second=arr[j];
 
-    // Sort the array
-    qsort(nums, N, sizeof(int), compare);
+            }
 
-    int minDiff = __INT_MAX__; // Initialize to maximum integer value
-    int first = -1, second = -1; // To store the pair with the smallest difference
-
-    // Find the pair with the smallest difference
-    for (int i = 1; i < N; i++) {
-        int diff = nums[i] - nums[i - 1];
-        if (diff < minDiff) {
-            minDiff = diff;
-            first = nums[i - 1];
-            second = nums[i];
         }
     }
+    // Sort the array
+    // qsort(nums, N, sizeof(int), compare);
+
+    // int minDiff = __INT_MAX__; // Initialize to maximum integer value
+    // int first = -1, second = -1; // To store the pair with the smallest difference
+
+    // // Find the pair with the smallest difference
+    // for (int i = 1; i < N; i++) {
+    //     int diff = nums[i] - nums[i - 1];
+    //     if (diff < minDiff) {
+    //         minDiff = diff;
+    //         first = nums[i - 1];
+    //         second = nums[i];
+    //     }
+    // }
 
     // Output the result
+    if(first<second)
     printf("%d %d\n", first, second);
+    else
+    printf("%d %d\n", second, first);
     return 0;
 }
