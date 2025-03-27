@@ -22,11 +22,11 @@ int main() {
 
     // Check the properties of the array
     for (int i = 0; i < N-1; i++) {
-        if (nums[i] < nums[i+1]) { 
-            asc = 0; // Found a decrease
+        if (nums[i] > nums[i+1]) { 
+            asc = 0; //prev no. big than next
         }
-        if (nums[i] > nums[i + 1]) {
-            desc= 0; // Found an increase
+        if (nums[i] < nums[i + 1]) {
+            desc= 0; // prev no. smaller than next
         }
     }
 
