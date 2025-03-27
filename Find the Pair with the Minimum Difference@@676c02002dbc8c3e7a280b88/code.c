@@ -25,12 +25,12 @@ int main() {
     {
         for(int j=i+1; j<N; j++)
         {
-            int diff=arr[i]-arr[j];
+            int diff=nums[i]-nums[j];
             if(abs(diff)<min)
             {
                 min=diff;
-                first=arr[i];
-                second=arr[j];
+                first=nums[i];
+                second=nums[j];
 
             }
 
