@@ -17,7 +17,7 @@ int main() {
     k = k % n; // If k is greater than n, we only need to rotate k % n times
 
     // Create a temporary array to hold the rotated values
-    int temp[n];
+    int temp;
     for(int i=0; i<n; i++)
     {
         if(i==n-1) //last element
