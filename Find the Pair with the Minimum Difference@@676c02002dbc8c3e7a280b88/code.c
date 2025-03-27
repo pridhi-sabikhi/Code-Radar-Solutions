@@ -32,6 +32,7 @@ int main() {
     // Find the pair with the smallest difference
     for (int i = 0; i < N-1; i++) {
         int diff = nums[i+1] - nums[i];
+        //no 
         if (diff < minDiff) {
             minDiff = diff;
             first = nums[i];
