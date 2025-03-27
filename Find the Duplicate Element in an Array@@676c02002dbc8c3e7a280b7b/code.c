@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<stdlib.h>
 
 int main() {
     int n;
@@ -13,12 +12,12 @@ int main() {
     // Start checking for duplicates
     for (int i = 0; i < n; i++) {
         // Use the absolute value to find the index
-        int index = abs(arr[i]);
+        int index = abs(arr[i]) - 1; // Adjust for 0-based index
 
         // Check if the value at this index is negative
         if (arr[index] < 0) {
             // If it's negative, we found the duplicate
-            printf("%d\n", index);
+            printf("%d\n", abs(arr[i])); // Print the duplicate
             return 0; // Exit after finding the duplicate
         } else {
             // Mark the value at this index as negative
