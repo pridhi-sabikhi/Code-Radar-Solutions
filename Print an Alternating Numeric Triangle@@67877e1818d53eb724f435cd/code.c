@@ -16,7 +16,7 @@ int main() {
             printf("%d",row+1);
         }
         }
-
+         printf("\n");
     }
 
     // for (int row = 0; row < n; row++) 
@@ -29,8 +29,8 @@ int main() {
     //             printf("0 ");
     //         }
     //     }
-        printf("\n");
-    }
+    //     printf("\n");
+    // }
 
     return 0;
 }
