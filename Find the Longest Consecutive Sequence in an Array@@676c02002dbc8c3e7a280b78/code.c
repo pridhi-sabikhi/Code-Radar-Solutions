@@ -8,12 +8,6 @@ int compare(const void *a, const void *b) {
 int main() {
     int N;
     scanf("%d", &N);
-    
-    if (N == 0) {
-        printf("0\n");
-        return 0;
-    }
-
     int nums[N]; // Assuming the maximum size of the array is 100000
     for (int i = 0; i < N; i++) {
         scanf("%d", &nums[i]);
