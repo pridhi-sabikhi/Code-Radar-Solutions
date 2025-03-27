@@ -31,7 +31,7 @@ int main() {
     }
 
     // If either property holds, the array is monotonic
-    if (isNonDecreasing || isNonIncreasing) {
+    if (asc || desc) {
         printf("YES\n");
     } else {
         printf("NO\n");
