@@ -24,11 +24,9 @@ void selectionSort(int arr[], int n) {
 
 // Function to print the array of integers
 void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        if (i > 0) {
-            printf(" "); // Print space before the next number
-        }
-        printf("%d", arr[i]);
+    for (int i = 0; i < n; i++)
+     {
+        printf("%d ", arr[i]);
     }
     printf("\n"); // Print newline at the end
 }
