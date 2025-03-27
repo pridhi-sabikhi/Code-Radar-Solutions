@@ -18,21 +18,42 @@ int main() {
 
     // Create a temporary array to hold the rotated values
     int temp[n];
-
-    // Copy the last k elements to the beginning of the temp array
-    for (int i = 0; i < k; i++) {
-        temp[i] = arr[n - k + i];
+    for(int i=0; i<n; i++)
+    {
+        if(i==n-1) //last element
+        {
+            temp=arr[i];
+            arr[i]=arr[0];
+            arr[0]=temp;
+        }
+        else if(i==n-2)// second last element
+        {
+            temp=arr[i];
+            arr[i]=arr[1];
+            arr[1]=temp;
+        }
+        else 
+        {
+            temp=arr[i];
+            arr[i]=[i+k];
+            arr[i+k]=arr[i];
+        }
     }
 
-    // Copy the remaining elements to the temp array
-    for (int i = 0; i < n - k; i++) {
-        temp[k + i] = arr[i];
-    }
+    // // Copy the last k elements to the beginning of the temp array
+    // for (int i = 0; i < k; i++) {
+    //     temp[i] = arr[n - k + i];
+    // }
 
-    // Copy the temp array back to the original array
-    for (int i = 0; i < n; i++) {
-        arr[i] = temp[i];
-    }
+    // // Copy the remaining elements to the temp array
+    // for (int i = 0; i < n - k; i++) {
+    //     temp[k + i] = arr[i];
+    // }
+
+    // // Copy the temp array back to the original array
+    // for (int i = 0; i < n; i++) {
+    //     arr[i] = temp[i];
+    // }
 
     // Print the rotated array
     for (int i = 0; i < n; i++) {
