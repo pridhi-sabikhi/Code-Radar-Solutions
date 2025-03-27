@@ -25,7 +25,7 @@ int main() {
         median = arr[N / 2];
     } else {
         // If even, take the average of the two middle elements
-        median = (arr[N / 2 - 1] + arr[N / 2]) / 2.0;
+        median = (arr[(N / 2) - 1] + arr[N / 2]) / 2.0;
     }
 
     // Print the median as an integer
