@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to perform insertion sort on an array of characters
-void insertionsort(char arr[], int n) {
+void insertionSort(char arr[], int n) {
     for (int i = 1; i < n; i++) {
         char key = arr[i]; // The character to be inserted
         int j = i - 1;
@@ -19,10 +19,8 @@ void insertionsort(char arr[], int n) {
 // Function to print the array of characters
 void printArray(char arr[], int n) {
     for (int i = 0; i < n; i++) {
-        if (i > 0) {
-            printf(" "); // Print space before the next character
-        }
-        printf("%c", arr[i]);
+       
+        printf("%c ", arr[i]);
     }
     printf("\n"); // Print newline at the end
 }
