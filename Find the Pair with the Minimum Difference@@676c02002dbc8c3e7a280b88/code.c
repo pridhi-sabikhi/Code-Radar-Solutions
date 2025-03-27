@@ -21,9 +21,9 @@ int main() {
     for (int i = 0; i < N; i++) {
         scanf("%d", &nums[i]);
     }
-    for(int i=0; i<n; i++)
+    for(int i=0; i<N; i++)
     {
-        for(int j=i+1; j<n; j++)
+        for(int j=i+1; j<N; j++)
         {
             int diff=arr[i]-arr[j];
             if(abs(diff)<min)
