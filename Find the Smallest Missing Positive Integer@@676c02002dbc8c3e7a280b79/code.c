@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int compare(void const *a, void const *b)
 {
     return (*(int *)a- *(int *)b);
