@@ -22,7 +22,7 @@ int main()
     {
         if(arr[i]>max)
         {
-            max2=max;
+            max2=max;//max2 mein pichli max ki value daal deni hai 
             max=arr[i];
         }
         else if(arr[i]>max2 && arr[i]!=max)
