@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to perform bubble sort on an array of characters
-void bubblesort(char arr[], int n) {
+void bubbleSort(char arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             // Compare adjacent characters
