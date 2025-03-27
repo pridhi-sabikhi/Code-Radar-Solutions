@@ -9,7 +9,7 @@ int main() {
         return 0;
     }
 
-    int nums[100]; // Assuming the maximum size of the array is 100
+    int nums[N]; // Assuming the maximum size of the array is 100
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
@@ -17,16 +17,16 @@ int main() {
     }
 
     // Flags to check if the array is non-decreasing or non-increasing
-    int isNonDecreasing = 1;
-    int isNonIncreasing = 1;
+    int asc = 1;
+    int desc = 1;
 
     // Check the properties of the array
-    for (int i = 1; i < N; i++) {
-        if (nums[i] < nums[i - 1]) {
-            isNonDecreasing = 0; // Found a decrease
+    for (int i = 0; i < N-1; i++) {
+        if (nums[i] < nums[i+1]) { 
+            asc = 0; // Found a decrease
         }
-        if (nums[i] > nums[i - 1]) {
-            isNonIncreasing = 0; // Found an increase
+        if (nums[i] > nums[i + 1]) {
+            desc= 0; // Found an increase
         }
     }
 
