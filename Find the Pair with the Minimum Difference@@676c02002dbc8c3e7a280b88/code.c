@@ -1,3 +1,4 @@
+//do like this bcz in last case jb no.s are 6 8 1 3 5 6 tb ans comes out 4 6 but it is 1 3 so sort
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +15,7 @@ int main() {
         return 0;
     }
 
-    int nums[100]; // Assuming the maximum size of the array is 100
+    int nums[N]; // Assuming the maximum size of the array is 100
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
@@ -24,8 +25,8 @@ int main() {
     // Sort the array
     qsort(nums, N, sizeof(int), compare);
 
-    int minDiff = __INT_MAX__; // Initialize to maximum integer value
-    int first = -1, second = -1; // To store the pair with the smallest difference
+    int minDiff = INT_MAX; // Initialize to maximum integer value
+    int first; second = -1; // To store the pair with the smallest difference
 
     // Find the pair with the smallest difference
     for (int i = 1; i < N; i++) {
