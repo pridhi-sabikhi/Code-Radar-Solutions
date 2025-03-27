@@ -31,10 +31,7 @@ int main()
         }
         printf("\n");
         }
-    else
-    {
-        continue;
-    }
+    
     }
     return 0;
 }
