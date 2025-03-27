@@ -54,7 +54,7 @@ int main() {
             if(foundPairs[i][0]<foundPairs[i][1])
             printf("%d %d\n", foundPairs[i][0], foundPairs[i][1]);
             else
-            printf("%d %d\n", foundPairs[i][1], foundPairs[i][0])
+            printf("%d %d\n", foundPairs[i][1], foundPairs[i][0]);
         }
     }
 
