@@ -35,7 +35,7 @@ int main() {
         else 
         {
             temp=arr[i];
-            arr[i]=[i+k];
+            arr[i]=arr[i+k];
             arr[i+k]=arr[i];
         }
     }
