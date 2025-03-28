@@ -3,15 +3,13 @@
 int findUnsortedSubarray(int arr[], int n) {
     int start = 0, end = n - 1;
 
-    // Find the first element from the left that is out of order
+    // deciding left boundary if acs oreder hai tb tk go on moving aage
     while (start < n - 1 && arr[start] <= arr[start + 1]) {
         start++;
     }
 
     // If the array is already sorted
-    if (start == n - 1) {
-        return 0; // No need to sort
-    }
+    
 
     // Find the first element from the right that is out of order
     while (end > 0 && arr[end] >= arr[end - 1]) {
