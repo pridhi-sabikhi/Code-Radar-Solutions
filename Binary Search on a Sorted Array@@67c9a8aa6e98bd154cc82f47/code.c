@@ -3,7 +3,7 @@ int binarySearch(int arr[], int n, int target) {
     int high = n - 1;    // End of the search range
 
     while (low <= high) {
-        int mid = low + (high - low) / 2;  // Calculate mid to avoid overflow
+        int mid = (high + low) / 2;  // Calculate mid to avoid overflow
 
         if (target > arr[mid]) {
             low = mid + 1;  // Move the lower bound up
