@@ -1,38 +1,27 @@
 #include <stdio.h>
-#include <limits.h>
+#include <stdlib.h>
 
-// Function to find the next minimum positive air level
-int findNextMin(int air[], int n, int prevMin) {
-    int minAir = INT_MAX;
-    for (int i = 0; i < n; i++) {
-        if (air[i] > prevMin && air[i] < minAir) {
-            minAir = air[i];
-        }
-    }
-    return (minAir == INT_MAX) ? -1 : minAir;
+// Comparator function for sorting
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
 }
 
 void deflateBalloons(int air[], int n) {
-    int remaining = n;
-    int prevMin = 0;  // Start from zero
+    // Step 1: Sort the array
+    qsort(air, n, sizeof(int), compare);
 
-    while (1) {
-        int minAir = findNextMin(air, n, prevMin);  // Get the next smallest positive air level
+    int remainingBalloons = n; // Initially, all balloons are present
 
-        if (minAir == -1) {  // No more air levels to process
-            break;
-        }
-
-        printf("%d\n", remaining);  // Print the number of balloons left
-        
-        prevMin = minAir;  // Update the previous minimum value
-
-        // Reduce the count of remaining balloons
-        for (int i = 0; i < n; i++) {
-            if (air[i] >= minAir) {
-                air[i] -= minAir;  
+    // Step 2: Process sorted air levels
+    for (int i = 0; i < n; i++) {
+        // Ignore duplicates (process only when we encounter a new air level)
+        if (i == 0 || air[i] != air[i - 1]) {
+            if (air[i] > 0) {  // Only consider positive air values
+                printf("%d\n", remainingBalloons);
             }
         }
-        remaining--;  // One unique air level is removed
+        remainingBalloons--; // One less balloon to process
     }
 }
+
+
