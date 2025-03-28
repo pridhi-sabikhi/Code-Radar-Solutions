@@ -24,7 +24,7 @@ int digitRightShift(int N) {
     shiftedStr[len] = '\0'; // Null-terminate the new string
     
     // Convert the shifted string back to an integer
-    int shiftedNumber = atoi(shiftedStr);
+    int shiftedNumber = int(shiftedStr);
     
     // If the shifted number is the same as the original, return the original
     if (shiftedNumber == N) {
