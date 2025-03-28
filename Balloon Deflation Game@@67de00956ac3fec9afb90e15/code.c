@@ -2,9 +2,13 @@
 #include <limits.h>
 
 void deflateBalloons(int air[], int n) {
+    int count = 0;
+    for(int i = 0 ; i< n ; i++){
+        if(air[i] == 0) count ++ ; 
+    }
     while (1) {
         int minAir = INT_MAX;
-        int count = 0;
+        
 
         // Find the minimum air level among nonzero balloons
         for (int i = 0; i < n; i++) {
