@@ -14,11 +14,11 @@ void selectionSort(char arr[], int n) {
         }
         
         // Swap the found minimum element with the first element of the unsorted part
-        if (minIndex != i) {
+        
             char temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
-        }
+        
     }
 }
 
