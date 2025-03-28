@@ -1,41 +1,27 @@
 #include <stdio.h>
-#include <limits.h>
+#include <stdlib.h>
+
+// Comparator function for sorting
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
 
 void deflateBalloons(int air[], int n) {
-    while (1) {
-        int minAir = INT_MAX;
-        int count = 0;
+    // Step 1: Sort the array
+    qsort(air, n, sizeof(int), compare);
 
-        // **Count total balloons regardless of their air level**
-        count = n;
+    int remainingBalloons = n; // Initially, all balloons are present
 
-        // Find the minimum nonzero air level
-        for (int i = 0; i < n; i++) {
-            if (air[i] > 0 && air[i] < minAir) {
-                minAir = air[i];
+    // Step 2: Process sorted air levels
+    for (int i = 0; i < n; i++) {
+        // Ignore duplicates (process only when we encounter a new air level)
+        if (i == 0 || air[i] != air[i - 1]) {
+            if (air[i] > 0) {  // Only consider positive air values
+                printf("%d\n", remainingBalloons);
             }
         }
-
-        // **Print count at start of iteration**
-        printf("%d\n", count);
-
-        // Deflate balloons
-        for (int i = 0; i < n; i++) {
-            if (air[i] > 0) {
-                air[i] -= minAir;
-            }
-        }
-
-        // **If all balloons are now zero, exit**
-        int allZero = 1;
-        for (int i = 0; i < n; i++) {
-            if (air[i] > 0) {
-                allZero = 0;
-                break;
-            }
-        }
-        if (allZero) {
-            break;
-        }
+        remainingBalloons--; // One less balloon to process
     }
 }
+
+
