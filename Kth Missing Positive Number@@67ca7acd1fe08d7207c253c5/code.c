@@ -11,10 +11,12 @@ int findKthMissing(int arr[], int n, int k) {
         } else {
             // If the current number is missing, increment the missing count
             missingCount++;
+        }
+    }
             if (missingCount == k) {
                 return current;  // Return the k-th missing positive integer
             }
-        }
+        
         current++;  // Move to the next positive integer
     }
 
