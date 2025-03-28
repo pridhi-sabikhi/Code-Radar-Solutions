@@ -34,7 +34,7 @@ int findUnsortedSubarray(int arr[], int n) {
     while ( arr[start - 1] > subarrayMin) {
         start--;
     }
-    while (&& arr[end + 1] < subarrayMax) {
+    while (arr[end + 1] < subarrayMax) {
         end++;
     }
 
