@@ -1,31 +1,38 @@
-#include<stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0 ; i<n ; i++){
-        scanf("%d",&arr[i]);
-    }
-    int y;
-    scanf("%d",&y);
-    int result[100][100]={0};
-    int ele1 ,ele2;
-    for(int i=0 ; i<n-1 ; i++){
-        for(int j=i+1 ; j<n ; j++){
-            if(arr[i]+arr[j]==y){
-                  ele1=arr[i];
-                  ele2=arr[j];
-                  if(ele1>ele2){
-                    int temp=ele1;
-                    ele1=ele2;
-                    ele2=temp;
-                  }
-                  if(result[i][j] == 0){
-                    printf("%d %d\n",ele1,ele2);
-                    result[i][j]=1;
-                  }
+#include <stdio.h>
+
+void findPairs(int arr[], int n, int target) {
+    int found = 0; // Flag to check if at least one pair is found
+    
+    for (int i = 0; i < n - 1; i++) {
+        int printed = 0; // Flag to check if the pair (arr[i], arr[j]) has been printed
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] + arr[j] == target) {
+                if (!printed) {  // Print only once for the same number
+                    printf("%d %d\n", arr[i], arr[j]);
+                    printed = 1; // Set flag to avoid repeating this pair
+                }
             }
-        
         }
     }
+}
+
+int main() {
+    int n, target;
+    
+    // Read input size
+    scanf("%d", &n);
+    int arr[n];
+    
+    // Read array elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    // Read target sum
+    scanf("%d", &target);
+    
+    // Find and print unique pairs
+    findPairs(arr, n, target);
+    
+    return 0;
 }
