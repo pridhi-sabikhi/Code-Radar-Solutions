@@ -9,39 +9,12 @@ int findKthMissing(int arr[], int n, int k) {
             // If the current number is in the array, move to the next number
             index++;
         } else {
-            // If the current number is missing, increment the missing count
-            missingCount++;
-        }
-        current++;
-    }
+            // If the current number is missing, increment the missing count then check ke kth hai toh retun current vrna inc current
+            missingCount++; 
             if (missingCount == k) {
                 return current;  // Return the k-th missing positive integer
             }
-//}
-        //current++;  // hr baar +kro bcz bcz chahe present ya missing keep on checking next next no.
-   // }
-
+        }
+        current++;  // Move to the next positive integer
+    }
 }
-
-// int findKthMissing(int arr[], int n, int k)
-// {
-//     int start=1, c=0;
-//     for(int i=0; ;)//not given ending bcz if k=2 and elements are 1234 then ans is 6
-//     // i.e. 1st missing is 5 and 2nd missing is 6  so tb go out of loop ki < condition
-//     {
-//         if(start == arr[i])
-//         {
-//             start++;
-//             i++; //if found tohi go to next element vrna ni
-//         }
-//         else
-//         {
-//             c++;
-//             if(c==k)
-//             return start;
-//             else
-//             start++;
-//         }
-
-//     }
-// }
