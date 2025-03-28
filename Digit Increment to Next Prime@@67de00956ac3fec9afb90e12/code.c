@@ -12,8 +12,11 @@ int nextPrimeDigit(int digit) {
 int incrementToPrimeDigits(int N) {
     int result = 0;
     int placeValue = 1; // To keep track of the place value (units, tens, hundreds, etc.)
-
-    while (N >= 0) {
+    if(N==0)
+    {
+        return 2; //bcz n=0 pr no. koi cal nhi hoga but ans is 2
+    }
+    while (N > 0) {
         int digit = N % 10; // Get the last digit
         int primeDigit = nextPrimeDigit(digit); // Get the next prime digit
         result += primeDigit * placeValue; // Add the prime digit to the result
