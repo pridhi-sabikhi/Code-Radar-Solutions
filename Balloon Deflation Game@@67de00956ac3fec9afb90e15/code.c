@@ -9,7 +9,7 @@ void deflateBalloons(int air[], int n) {
 
         // Count how many balloons have air and find the minimum air level
         for (int i = 0; i < n; i++) {
-            if (air[i] > 0) {
+            if (air[i] >= 0) {
                 count++;
                 if (air[i] < minAir) {
                     minAir = air[i];
