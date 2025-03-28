@@ -12,15 +12,15 @@ int findKthMissing(int arr[], int n, int k) {
             // If the current number is missing, increment the missing count
             missingCount++;
         }
+        current++;
     }
             if (missingCount == k) {
                 return current;  // Return the k-th missing positive integer
             }
-        
-        current++;  // Move to the next positive integer
-    }
+//}
+        //current++;  // hr baar +kro bcz bcz chahe present ya missing keep on checking next next no.
+   // }
 
-    return -1;  // In case k is out of bounds (not expected in this problem)
 }
 
 // int findKthMissing(int arr[], int n, int k)
