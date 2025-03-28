@@ -3,7 +3,7 @@
 // Function to perform bubble sort on an array of characters
 void bubbleSort(char arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
+        for (int j = 0; j < n -1; j++) {
             // Compare adjacent characters
             if (arr[j] > arr[j + 1]) {
                 // Swap if they are in the wrong order
