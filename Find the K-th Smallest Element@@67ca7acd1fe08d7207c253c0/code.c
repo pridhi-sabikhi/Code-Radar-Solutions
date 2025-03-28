@@ -1,3 +1,4 @@
+#include<stdlib.h>
 // void selectionSort(int arr[], int n) {
 //     for (int i = 0; i < n - 1; i++) {
 //         int minIndex = i;
@@ -18,7 +19,7 @@ int compare(const void *a, const void *b)
 {
     return (*(int *)a - *(int *)b);
 }
-int selectionSort(int arr[], int n, int k)
+int selectionSort(int arr[], int n)
 {
     qsort(arr, n, sizeof(int), compare);
 }
