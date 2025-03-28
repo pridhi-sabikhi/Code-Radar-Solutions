@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_SIZE 1000
-
 int highest_frequency_element(int arr[], int n) {
-    int frequency[MAX_SIZE] = {0}; // Array to store frequency of elements
+    int frequency[100000] = {0}; // Array to store frequency of elements
     int max_freq = 0; // Variable to track maximum frequency
     int result_element = -1; // Variable to store the result element
 
@@ -14,11 +12,11 @@ int highest_frequency_element(int arr[], int n) {
     }
 
     // Find the element with the highest frequency
-    for (int i = 0; i < MAX_SIZE; i++) {
+    for (int i = 0; i < 100000; i++) {
         if (frequency[i] > max_freq) {
             max_freq = frequency[i];
             result_element = i; // Update result element
-        } else if (frequency[i] == max_freq && result_element > i) {
+        } else if (frequency[i] == max_freq && result_element > i && max_freq!=0) {
             result_element = i; // Update to the smaller element
         }
     }
