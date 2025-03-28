@@ -2,39 +2,40 @@
 #include <limits.h>
 
 void deflateBalloons(int air[], int n) {
-    int count = 0;
-    for(int i = 0 ; i< n ; i++){
-        if(air[i] == 0) count ++ ; 
-    }
     while (1) {
         int minAir = INT_MAX;
-        
+        int count = 0;
 
-        // Find the minimum air level among nonzero balloons
+        // **Count total balloons regardless of their air level**
+        count = n;
+
+        // Find the minimum nonzero air level
         for (int i = 0; i < n; i++) {
-            if (air[i] > 0) {
-                count++;
-                if (air[i] < minAir) {
-                    minAir = air[i];
-                }
+            if (air[i] > 0 && air[i] < minAir) {
+                minAir = air[i];
             }
         }
 
-        // If no balloons have air left, break the loop
-        if (count == 0) {
-            break;
-        }
-
-        // Print the count of balloons that still have air
+        // **Print count at start of iteration**
         printf("%d\n", count);
 
-        // Deflate the balloons by the minimum air level found
+        // Deflate balloons
         for (int i = 0; i < n; i++) {
             if (air[i] > 0) {
                 air[i] -= minAir;
             }
         }
+
+        // **If all balloons are now zero, exit**
+        int allZero = 1;
+        for (int i = 0; i < n; i++) {
+            if (air[i] > 0) {
+                allZero = 0;
+                break;
+            }
+        }
+        if (allZero) {
+            break;
+        }
     }
 }
-
-
