@@ -31,10 +31,10 @@ int findUnsortedSubarray(int arr[], int n) {
     }
 
     // Expand the subarray to include any numbers which are out of place
-    while (start <n-1 && arr[start - 1] > subarrayMin) {
+    while (start > 0 && arr[start - 1] > subarrayMin) {
         start--;
     }
-    while (end >0 && arr[end + 1] < subarrayMax) {
+    while (end < n - 1 && arr[end + 1] < subarrayMax) {
         end++;
     }
 
