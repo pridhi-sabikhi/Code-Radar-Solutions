@@ -1,35 +1,28 @@
 #include <stdio.h>
-#include <string.h>
 
 int digitRightShift(int N) {
-    // Convert the integer to a string
-    char str[12]; // Enough to hold up to 10 digits + null terminator
-    sprintf(str, "%d", N);
-    
-    int len = strlen(str);
-    
-    // If the number has only one digit, return it as is
-    if (len == 1) {
+    // If N is a single digit, return it as is
+    if (N < 10) {
         return N;
     }
-    
-    // Create a new string for the shifted result
-    char shiftedStr[12];
-    
-    // Perform the right shift
-    shiftedStr[0] = str[len - 1]; // Last digit goes to the front
-    for (int i = 1; i < len; i++) {
-        shiftedStr[i] = str[i - 1]; // Shift other digits to the right
+
+    int lastDigit = N % 10; // Get the last digit
+    int shiftedNumber = N / 10; // Remove the last digit
+
+    // Find the number of digits in the original number
+    int numDigits = 0;
+    int temp = N;
+    while (temp > 0) {
+        temp /= 10;
+        numDigits++;
     }
-    shiftedStr[len] = '\0'; // Null-terminate the new string
-    
-    // Convert the shifted string back to an integer
-    int shiftedNumber = int(shiftedStr);
-    
-    // If the shifted number is the same as the original, return the original
-    if (shiftedNumber == N) {
-        return N;
+
+    // Reconstruct the new number
+    shiftedNumber = lastDigit * 1; // Place the last digit at the front
+    for (int i = 1; i < numDigits; i++) {
+        shiftedNumber *= 10; // Shift left by one digit
     }
-    
+    shiftedNumber += N / 10; // Add the rest of the number
+
     return shiftedNumber;
 }
