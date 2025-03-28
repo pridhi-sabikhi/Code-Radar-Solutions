@@ -30,7 +30,7 @@ int mountainPeak(int N) {
     }
 
     // If we reached the end, we have a valid mountain
-    if (i == length - 1) {
-        return str[i-2] - '0'; // Return the peak digit as an integer
-    }
+    // if (i == length - 1) {
+        return str[length/2] ; // Return the peak digit as an integer
+    //}
 }
