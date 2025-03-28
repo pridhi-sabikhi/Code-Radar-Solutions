@@ -16,9 +16,8 @@ int incrementToPrimeDigits(int N) {
     while (N > 0) {
         int digit = N % 10; // Get the last digit
         int primeDigit = nextPrimeDigit(digit); // Get the next prime digit
-        result =result*10+primeDigit;
-        // result += primeDigit * placeValue; // Add the prime digit to the result
-        // placeValue *= 10; // Move to the next place value
+        result += primeDigit * placeValue; // Add the prime digit to the result
+        placeValue *= 10; // Move to the next place value
         N /= 10; // Remove the last digit
     }
 
