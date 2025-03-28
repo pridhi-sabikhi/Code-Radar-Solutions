@@ -5,11 +5,11 @@ void findPairs(int arr[], int n, int target) {
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == target) {
-                // if(arr[i]!=arr[i-1] || arr[j]!=arr[j-1]) //to prevent duplicates 
-                // {
+                 if(arr[i]!=arr[i-1] || arr[j]!=arr[j-1]) //to prevent duplicates 
+                 {
                 printf("%d %d\n", arr[i], arr[j]);
                 found = 1;
-                //}
+                }
             }
         }
     }
