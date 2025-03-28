@@ -13,7 +13,7 @@ int factorialRange(int start, int end)
         {
             f=f*i;
         }
-        printf("%d", f);
+        printf("%d\n", f);
     }
     return 0;
 }
