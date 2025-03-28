@@ -1,9 +1,6 @@
 #include <stdio.h>
 
 void deflateBalloons(int air[], int n) {
-    // Print the initial count of balloons
-    printf("%d\n", n);
-
     while (1) {
         // Find the minimum air level among the remaining balloons
         int minAir = 1001; // Assuming air levels are <= 1000
@@ -35,3 +32,4 @@ void deflateBalloons(int air[], int n) {
         }
     }
 }
+
