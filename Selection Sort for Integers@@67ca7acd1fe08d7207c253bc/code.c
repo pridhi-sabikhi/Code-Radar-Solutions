@@ -8,7 +8,7 @@ void selectionSort(int arr[], int n) {
         
         // Find the index of the minimum element in the unsorted part
         for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
+            if (arr[j] > arr[minIndex]) {
                 minIndex = j;
             }
         }
