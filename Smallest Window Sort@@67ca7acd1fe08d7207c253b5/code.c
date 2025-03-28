@@ -8,10 +8,12 @@ int findUnsortedSubarray(int arr[], int n) {
         start++;
     }
 
-    // If the array is already sorted
-    
+    // If the array is already sorted .imp to writ evrna 1 test case fail
+    if (start == n - 1) {
+        return 0; // No need to sort
+    }
 
-    // Find the first element from the right that is out of order
+    // deciding right boundary if desc ordeer hai tb tk go on moving pivhe
     while (end > 0 && arr[end] >= arr[end - 1]) {
         end--;
     }
@@ -29,10 +31,10 @@ int findUnsortedSubarray(int arr[], int n) {
     }
 
     // Expand the subarray to include any numbers which are out of place
-    while (start > 0 && arr[start - 1] > subarrayMin) {
+    while (start <n-1 && arr[start - 1] > subarrayMin) {
         start--;
     }
-    while (end < n - 1 && arr[end + 1] < subarrayMax) {
+    while (end >0 && arr[end + 1] < subarrayMax) {
         end++;
     }
 
