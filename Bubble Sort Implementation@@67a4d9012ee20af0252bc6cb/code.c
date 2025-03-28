@@ -1,6 +1,6 @@
 int bubbleSort(int arr[], int n)
 {
-    for(int rotation=0; rotation<n; rotation++)
+    for(int rotation=0; rotation<n-1; rotation++)
     {
     for(int i=0; i<n-1; i++)
     {
