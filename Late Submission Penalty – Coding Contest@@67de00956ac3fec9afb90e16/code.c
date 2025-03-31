@@ -1,24 +1,20 @@
 #include <stdio.h>
 
-int calculatePenalty(int subDay, int subMonth, int subYear, int dueDay, int dueMonth, int dueYear) {
-    // If the submission year is greater than the due year
-    if (subYear > dueYear) {
-        return 5000; // Fixed penalty for different year
+int calculatePenalty(int subDay, int subMonth, int subYear, int dueDay, int dueMonth, int dueYear)
+ {
+
+    if (dueDay!=subDay && dueMonth == subMonth && subYear == dueYear) 
+    {
+        return ((subDay-dueDay)*10);
     }
-    // If the submission year is the same as the due year
-    else if (subYear == dueYear) {
-        // If the submission month is greater than the due month
-        if (subMonth > dueMonth) {
-            return (subMonth - dueMonth) * 200; // Monthly penalty
+    else if ((subMonth != dueMonth && subYear == dueYear)||(subDay==dueDay) ){
+            return ((subMonth - dueMonth) * 200); 
         }
-        // If the submission month is the same as the due month
-        else if (subMonth == dueMonth) {
-            // If the submission day is greater than the due day
-            if (subDay > dueDay) {
-                return (subDay - dueDay) * 10; // Daily penalty
-            }
-        }
+        
+    else if (subYear != dueYear) //baaki conditions se no frq hame 
+    {
+        return 5000;
     }
-    // If the submission is on or before the due date
-    return 0; // No penalty
-}
+    //no need to write else bina uske bhi chalega 
+     return 0; 
+    }
