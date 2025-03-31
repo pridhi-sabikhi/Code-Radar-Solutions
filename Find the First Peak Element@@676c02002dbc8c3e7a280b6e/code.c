@@ -38,8 +38,7 @@ int main()
         //here no need to return
         }
         //w.m no peak no.
-        else{
-        printf("-1"); //if no peak element
-        }
-    return 0;
+        return -1; //if no peak element
+    //     }
+    // return 0;
 }
