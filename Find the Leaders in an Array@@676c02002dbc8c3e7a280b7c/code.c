@@ -15,12 +15,12 @@ int main() {
         scanf("%d", &nums[i]);
     }
     // Array to store leaders
-    int leaders[100]; // Assuming the maximum number of leaders is 100
+    int leaders[100]; 
     int leaderCount = 0;
 
     // Start from the last element
     int maxFromRight = nums[N - 1];
-    leaders[leaderCount++] = maxFromRight; // The last element is always a leader
+    leaders[leaderCount++] = maxFromRight; // The last element is always a leader ulta store kr rhe toh ulta hi print krenge bcz we need leaderCount ka 1st element at last 
 
     // Traverse the array from right to left
     for (int i = N - 2; i >= 0; i--) {
