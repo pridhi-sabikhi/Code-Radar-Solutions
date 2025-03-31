@@ -17,8 +17,8 @@ int main() {
         while (nums[i] > 0 && nums[i] <= N && nums[nums[i] - 1] != nums[i]) {
             // Swap nums[i] with nums[nums[i] - 1] no. ko ussno. ke index-1 pr daalo eg: put 2 at 1 index
             int temp = nums[i];
-            nums[i] = nums[nums[i] - 1];
-            nums[nums[i] - 1] = temp;
+            nums[i] = nums[temp - 1];
+            nums[temp - 1] = temp;
         }
     }
     //after sorting sirf vohi index bachega jahan elment is missing
