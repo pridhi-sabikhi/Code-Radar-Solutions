@@ -8,7 +8,7 @@ int main() {
         return 0; // No elements to process
     }
 
-    int arr[N]; // Assuming the maximum size of the array is 100
+    int nums[N]; // Assuming the maximum size of the array is 100
 
     // Read the array elements
     for (int i = 0; i < N; i++) {
