@@ -3,7 +3,7 @@
 int calculatePenalty(int subDay, int subMonth, int subYear, int dueDay, int dueMonth, int dueYear)
  {
 
-    if (dueDay!=subDay && dueMonth == subMonth && subYear == dueYear) 
+    if (subDay > dueDay && dueMonth == subMonth && subYear == dueYear) 
     {
         return ((subDay-dueDay)*10);
     }
