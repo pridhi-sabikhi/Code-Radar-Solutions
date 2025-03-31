@@ -21,6 +21,7 @@ int main() {
             nums[temp - 1] = temp;
         }
     }
+    //after sorting sirf vohi index bachega jahan elment is missing
 
     // Finding the smallest missing positive integer
     for (int i = 0; i < N; i++) {
