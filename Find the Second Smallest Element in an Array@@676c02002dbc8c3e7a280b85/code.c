@@ -6,11 +6,11 @@ int main()
     int n;
     scanf("%d", &n);
     //if array size is less than 2 then prnt -1 and exit
-    if(n<2)
-    {
-    printf("-1");
-    return 0;
-    }
+    // if(n<2)
+    // {
+    // printf("-1");
+    // return 0;
+    // }
     int arr[n];
     for(int i=0; i<n; i++)
     {
