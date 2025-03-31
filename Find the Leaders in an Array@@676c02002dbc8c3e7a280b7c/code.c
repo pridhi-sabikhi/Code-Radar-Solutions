@@ -4,40 +4,34 @@ int main() {
     int N;
     scanf("%d", &N);
     
-    if (N <= 0) {
-        return 0; // No elements to process
-    }
+    int nums[N];
 
-    int nums[N]; // Assuming the maximum size of the array is 100
-
-    // Read the array elements
     for (int i = 0; i < N; i++) {
         scanf("%d", &nums[i]);
     }
     // Array to store leaders
-    int leaders[100]; 
+    int leaders[N]; 
     int leaderCount = 0;
 
-    // Start from the last element
+    // last element ko max le liya then check hr element ke isse big no. hai left mein if yes then vo no.
+    // is leader and add that no. in array now for next elader again check 
     int maxFromRight = nums[N - 1];
-    leaders[leaderCount++] = maxFromRight; // The last element is always a leader ulta store kr rhe toh ulta hi print krenge bcz we need leaderCount ka 1st element at last 
+    leaders[leaderCount++] = maxFromRight; // The last element is always a leader  
 
     // Traverse the array from right to left
-    for (int i = N - 2; i >= 0; i--) {
-        if (nums[i] >= maxFromRight) {
-            maxFromRight = nums[i]; // Update the maximum from the right
-            leaders[leaderCount++] = maxFromRight; // Store the leader
+    for (int i = N - 2; i >= 0; i--) 
+    {
+        if (nums[i] >= maxFromRight) 
+        {
+            maxFromRight = nums[i]; 
+            leaders[leaderCount++] = maxFromRight; 
         }
     }
 
-    // Print leaders in the order they appear in the original array
-    for (int i = leaderCount - 1; i >= 0; i--) {
-        printf("%d", leaders[i]);
-        if (i > 0) {
-            printf(" "); // Print space between numbers
-        }
+    // ulta store kr rhe toh ulta hi print krenge bcz we need leaders ka 1st element(orig array ka last element) at last
+    for (int i = leaderCount - 1; i >= 0; i--) 
+    {
+        printf("%d ", leaders[i]);
     }
-    printf("\n"); // New line at the end
-
     return 0;
 }
