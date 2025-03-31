@@ -13,6 +13,7 @@ int main() {
 
     //Rearranging the array
     for (int i = 0; i < N; i++) {
+        //checking ke no. is within limits and last mein checking ke pehle se hi agr no is at no.-1index pr toh no need to swap
         while (nums[i] > 0 && nums[i] <= N && nums[nums[i] - 1] != nums[i]) {
             // Swap nums[i] with nums[nums[i] - 1] no. ko ussno. ke index-1 pr daalo eg: put 2 at 1 index
             int temp = nums[i];
