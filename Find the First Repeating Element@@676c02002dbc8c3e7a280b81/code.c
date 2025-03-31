@@ -33,6 +33,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
+    for(int i=0; i<n;i++)
     {
         for(int j=i+1; j<n; j++)//start j with index i+1 bcz pichle toh check ho chuke hai 
         //and jis no. ko check krna ahi ussi no. ko dubara lekr usse hi repeated na smj le
