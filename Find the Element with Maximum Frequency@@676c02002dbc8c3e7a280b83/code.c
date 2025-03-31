@@ -24,8 +24,9 @@ int main() {
         if (frequency[i] > maxFrequency) {
             maxFrequency = frequency[i];
             result = i; // Update result to the current number
-        } else if (frequency[i] == maxFrequency && maxFrequency != 0 && result< i) {
+        } else if (frequency[i] == maxFrequency && maxFrequency > 0) {
             // If the same frequency, take the smaller number
+            if(result<i)
              result = i;
             
         }
