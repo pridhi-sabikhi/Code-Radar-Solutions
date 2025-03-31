@@ -23,9 +23,10 @@ int main() {
             {
                 break; //come out of inner forloop and check for next no. in i               
             }
+        }
             //agr vohi leader hai 
             printf("%d ", max);
-        }
+        
 
     }
     printf("%d ", arr[N-1]); //at last print last element
