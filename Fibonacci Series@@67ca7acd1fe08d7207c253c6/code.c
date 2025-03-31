@@ -24,6 +24,7 @@
 //     return 0;
 // }
 //or
+//do this niche wala 
 int fibonacciSeries(int n)
 {
     int arr[n];
