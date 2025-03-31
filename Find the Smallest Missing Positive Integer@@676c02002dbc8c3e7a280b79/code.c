@@ -14,7 +14,7 @@ int main() {
     //Rearranging the array
     for (int i = 0; i < N; i++) {
         while (nums[i] > 0 && nums[i] <= N && nums[nums[i] - 1] != nums[i]) {
-            // Swap nums[i] with nums[nums[i] - 1]
+            // Swap nums[i] with nums[nums[i] - 1] no. ko ussno. ke index-1 pr daalo eg: put 2 at 1 index
             int temp = nums[i];
             nums[i] = nums[temp - 1];
             nums[temp - 1] = temp;
