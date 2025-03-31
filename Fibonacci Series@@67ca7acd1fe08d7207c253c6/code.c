@@ -24,7 +24,7 @@
 //     return 0;
 // }
 //or
-fibonacciSeries(int n)
+int fibonacciSeries(int n)
 {
     int arr[n];
     arr[0]=0;
