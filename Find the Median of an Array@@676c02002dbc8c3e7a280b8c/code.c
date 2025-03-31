@@ -19,7 +19,7 @@ int main() {
     qsort(arr, N, sizeof(int), compare);
 
     // Calculate the median
-    double median;
+    int median;
     if (N % 2 == 1) {
         // If odd, take the middle element
         median = arr[N / 2];
@@ -29,7 +29,7 @@ int main() {
     }
 
     // Print the median as an integer
-    printf("%d\n", (int)median);
+    printf("%d\n", median);
 
     return 0;
 }
