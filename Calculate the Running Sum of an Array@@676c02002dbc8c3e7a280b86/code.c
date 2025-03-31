@@ -14,7 +14,7 @@ int main() {
     int sum=0;
     for (int i = 0; i < N; i++) 
     {
-        runningSum[i]=sum+num[i];
+        runningSum[i]=sum+nums[i];
         }
 
     // Output the running sum array
