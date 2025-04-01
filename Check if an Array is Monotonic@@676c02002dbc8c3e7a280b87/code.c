@@ -4,10 +4,10 @@ int main() {
     int N;
     scanf("%d", &N);
     
-    if (N == 0) {
-        printf("YES\n"); // An empty array can be considered monotonic
-        return 0;
-    }
+    // if (N == 0) {
+    //     printf("YES\n"); // An empty array can be considered monotonic
+    //     return 0;
+    // }
 
     int nums[N]; // Assuming the maximum size of the array is 100
 
