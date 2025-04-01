@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <limits.h>
 void findPairs(int arr[], int n, int target) {
     int found = 0; // Flag to check if at least one pair is found
     int first=INT_MIN , second=INT_MIN;
