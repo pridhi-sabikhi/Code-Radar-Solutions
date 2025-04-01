@@ -3,7 +3,7 @@
 int main() {
     int N;
     scanf("%d", &N);
-    
+   //working without this also  
     // if (N == 0) {
     //     printf("YES\n"); // An empty array can be considered monotonic
     //     return 0;
