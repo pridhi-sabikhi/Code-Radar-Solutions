@@ -1,3 +1,4 @@
+//check if there's better way 
 #include <stdio.h>
 #include <limits.h>
 void findPairs(int arr[], int n, int target) 
@@ -10,11 +11,9 @@ void findPairs(int arr[], int n, int target)
         for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == target && first!=arr[i] && first!=arr[j] &&second!=arr[i] &&second!=arr[j])
              {
-                //if (!printed) {  // Print only once for the same number
                 first=arr[i];
                 second=arr[j];
-                    printf("%d %d\n", first, second);
-                    //printed = 1; // Set flag to avoid repeating this pair
+                printf("%d %d\n", first, second);
                 
             }
         }
