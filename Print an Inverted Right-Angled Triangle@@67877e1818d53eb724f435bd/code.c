@@ -6,7 +6,7 @@ int main() {
     {
          for(int col=0; col<2*row+1; col++){
 if(col%2==0)
-printf("%d"row+1);
+printf("%d",row+1);
 else
 printf("*");      
 }
