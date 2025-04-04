@@ -9,9 +9,7 @@ int main()
     int l=strlen(sent);
     for(int i=0; i<l; i++)
     {
-        //if(sent[i]==" ") aise krne se error b/w pointer and int 
-        char *p= sent[i];
-        if(*p==" ")
+        if(sent==' ')
         count++;
     }
     printf("%d", count);
