@@ -11,7 +11,7 @@ int main()
     {
         //if(sent[i]==" ") aise krne se error b/w pointer and int 
         char p= sent[i];
-        if(p==" ")
+        if(*p==" ")
         count++;
     }
     printf("%d", count);
