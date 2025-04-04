@@ -9,7 +9,7 @@ int main()
     int l=strlen(sent);
     for(int i=0; i<l; i++)
     {
-        if(sent==' ')
+        if(sent[i] ==' ')//" "krne se error aa rha that don't compare int(" ") with pointer (sent[i])
         count++;
     }
     printf("%d", count);
