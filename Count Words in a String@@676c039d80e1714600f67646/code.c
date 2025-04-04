@@ -10,7 +10,10 @@ int main()
     for(int i=0; i<l; i++)
     {
         if(sent[i] ==' ')//" "krne se error aa rha that don't compare int(" ") with pointer (sent[i])
+        {
+            printf("space is present");
         count++;
+        }
     }
     printf("%d", count);
     return 0;
