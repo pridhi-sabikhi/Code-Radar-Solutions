@@ -2,9 +2,9 @@
 #include <string.h>
 int main()
 {
-    char s[100];
+    char sent[100];
     int i=0, count =0;
-    scanf("%c", s);
+    scanf("%c", sent);
     while(isalpha(sent[i]))
     {
         count++;
