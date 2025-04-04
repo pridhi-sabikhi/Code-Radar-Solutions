@@ -15,7 +15,7 @@ int palindrome(char sent[]) //bool nhi lena vrna stdbool lena pdega
 }
 int main()
 {
-    char sent[];
+    char sent[100];
     scanf("%s", sent);
     if(palindrome(sent))
     {
