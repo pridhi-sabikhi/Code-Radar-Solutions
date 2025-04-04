@@ -3,9 +3,9 @@
 int main()
 {
     char sent[100];
-    int count=0;
+    int count=1;//for the 1st word
     scanf("%s", sent);
-    sent=sent+" ";
+    //sent=sent+" ";
     int l=strlen(sent);
     for(int i=0; i<l; i++)
     {
