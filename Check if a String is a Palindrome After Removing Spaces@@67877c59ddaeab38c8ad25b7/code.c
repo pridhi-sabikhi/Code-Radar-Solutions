@@ -17,7 +17,7 @@ int palindrome(char sent[]) //bool nhi lena vrna stdbool lena pdega
     {
         if(sent1[i]!=sent1[count-i])
         {
-            printf("%c", sent[i]);
+            
             return 0;//w/m not palindrome
         }
     }
