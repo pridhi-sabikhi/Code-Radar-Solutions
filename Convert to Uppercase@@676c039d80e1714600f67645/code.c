@@ -15,6 +15,7 @@ int main()
             sent[i]=sent[i]-32;
         }
         }
+       
     }
     printf("%s", sent);
 return 0;
