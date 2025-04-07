@@ -3,7 +3,7 @@
 int main()
 {
     char sent[100], sent1[100];
-    scanf("%c", sent[100]);
+    scanf("%s", &sent);
     int l=strlen(sent);
     for(int i=0; i<l; i++)
     {
