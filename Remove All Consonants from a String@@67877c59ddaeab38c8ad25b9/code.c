@@ -4,7 +4,7 @@
 int main()
 {
     char sent[1000], new[100];
-    count=0
+    int count=0;
     scanf("%s", &sent);
     int l=strlen(sent);
     for(int i=0; i<l; i++)
