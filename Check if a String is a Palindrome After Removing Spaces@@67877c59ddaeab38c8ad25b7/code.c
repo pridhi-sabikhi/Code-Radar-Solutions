@@ -15,7 +15,7 @@ int palindrome(char sent[]) //bool nhi lena vrna stdbool lena pdega
     // int l=strlen(sent1);
     for(int i=0; i<count/2; i++)
     {
-        if(sent1[i]!=sent1[count-i-1])
+        if(sent1[i]!=sent1[count-i])
         {
             printf("%c", sent[i]);
             return 0;//w/m not palindrome
