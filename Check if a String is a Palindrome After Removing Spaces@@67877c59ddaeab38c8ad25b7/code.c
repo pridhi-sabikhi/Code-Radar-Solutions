@@ -12,10 +12,10 @@ int palindrome(char sent[]) //bool nhi lena vrna stdbool lena pdega
             sent1[count++]=sent[i];
         }
     }
-    int l=strlen(sent1);
-    for(int i=0; i<l/2; i++)
+    // int l=strlen(sent1);
+    for(int i=0; i<count/2; i++)
     {
-        if(sent1[i]!=sent1[l-i-1])
+        if(sent1[i]!=sent1[count-i-1])
         {
             return 0;//w/m not palindrome
         }
