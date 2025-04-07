@@ -4,7 +4,7 @@ int palindrome(char sent[]) //bool nhi lena vrna stdbool lena pdega
 {
     int count =0; 
     char sent1[100];
-    int n=strlen(sent)
+    int n=strlen(sent);
     for(int i=0; i<n; i++)
     {
         if(sent[i]!=' ')
