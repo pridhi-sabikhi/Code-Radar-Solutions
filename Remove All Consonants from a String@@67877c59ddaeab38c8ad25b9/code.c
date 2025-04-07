@@ -17,8 +17,8 @@ int main()
                 new[count++]=sent[i];
             }
         }
-        else
-        new[count++]=sent[i];
+        // else
+        // new[count++]=sent[i];
     }
     printf("%s", sent);
     return 0;
