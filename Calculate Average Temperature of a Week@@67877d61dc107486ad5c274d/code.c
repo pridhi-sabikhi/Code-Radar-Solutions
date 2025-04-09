@@ -10,7 +10,7 @@ int main()
     for(int i=0; i<7; i++)
     {
         scanf("%s", s1[i].dayname);
-        scanf("%d", s1[i].temp);
+        scanf("%d", &s1[i].temp);
     }
     for(int i=0; i<7; i++)
     {
