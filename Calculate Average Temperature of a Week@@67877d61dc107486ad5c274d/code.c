@@ -6,7 +6,7 @@ struct day
 };
 int main()
 {
-    struct day s1[0]; //can take 7
+    struct day s1[7]; //can take 6,5,,4,3,2,1,0 any
     float sum=0.0, avg=0.0;
     for(int i=0; i<7; i++)
     {
@@ -17,7 +17,7 @@ int main()
     {
         sum= sum+s1[i].temp;
     }
-    avg= sum/7;//can take 7.0
+    avg= sum/7.0;//can take 7.0
     printf("Average Temperature: %.2f", avg);
     return 0;
 }
