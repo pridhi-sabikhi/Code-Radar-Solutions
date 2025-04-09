@@ -15,7 +15,7 @@ int main()
         scanf("%d", &s1[i].rollno);
         scanf("%s\n", s1[i].name);
         //name ke baad marks nhi chad rhe sirf 0.00 hi aa rhe hai 
-        scanf("%f", &s1[i].marks);
+        scanf("%.2f", &s1[i].marks);
     }
     for(int i=0; i<n; i++)
     {
