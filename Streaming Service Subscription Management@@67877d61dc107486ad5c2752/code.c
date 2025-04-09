@@ -1,5 +1,6 @@
 //segmentation fault tb bhi aata hai jb scanf mein & na lgaya ho 
 #include <stdio.h>
+#include <string.h>
 struct Subscription
 {
     char name[100], type[100];
@@ -19,18 +20,18 @@ int main()
     }
     for(int i=0; i<N; i++)
     {
-        
-        if(s1[i].type == "Basic")
+        //string word checking ke liye nhi utha rha 
+        if(strstr(s1[i].name, "Basic"))
         {
         countb ++;
         totalb = totalb + s1[i].cost;
         }
-        else if(s1[i].type == "Standard")
+        else if(strstr(s1[i].name, "Standard"))
         {
             counts ++;
             totals = totals + s1[i].cost;
         }
-        else if(s1[i].type == "Premium")
+        else if(strstr(s1[i].name, "Premium"))
         {
             countp ++;
             totalp = totalp + s1[i].cost;
