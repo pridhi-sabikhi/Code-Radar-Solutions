@@ -1,3 +1,4 @@
+#include <stdio.h>
 struct day
 {
     char dayname[100];
