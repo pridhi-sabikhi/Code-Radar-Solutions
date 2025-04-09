@@ -15,7 +15,7 @@ int main()
     {
         scanf("%d", &s1[i].rollno);
         scanf("%s", s1[i].name);
-        scanf("%f", s1[i].marks);
+        scanf("%f", &s1[i].marks);
     }
     for(int i=0; i<N; i++)
     {
@@ -31,7 +31,7 @@ int main()
         {
             grade='C';
         }
-        printf("Roll Number: %d, Name: %s, Grade: %c", s1[i].rollno, s1[i].name, grade);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", s1[i].rollno, s1[i].name, grade);
     }
     return 0; 
 }
