@@ -22,7 +22,7 @@ int main()
     {
         sum=sum+s1[i].marks;     
     }
-    avg=sum/n;
+    avg=sum/n; //here no need to write n.0
 
     printf("Average Marks: %.2f", avg);
     return 0;    
