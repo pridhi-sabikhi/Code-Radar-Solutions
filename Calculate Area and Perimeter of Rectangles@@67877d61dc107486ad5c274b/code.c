@@ -14,7 +14,7 @@ int main()
     for(int i=0; i<n; i++)
     {
         scanf("%d", &s1[i].length);
-        scanf("%d", &s1[i].breadth);//%.2f nhi krna vrna name mein name nhi merks jaate hai
+        scanf("%f", &s1[i].breadth);
     }
     for(int i=0; i<n; i++)
     {    
