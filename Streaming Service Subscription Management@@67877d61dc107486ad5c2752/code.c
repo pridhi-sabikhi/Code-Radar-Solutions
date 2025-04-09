@@ -1,3 +1,4 @@
+//segmentation fault tb bhi aata hai jb scanf mein & na lgaya ho 
 #include <stdio.h>
 struct Subscription
 {
@@ -14,7 +15,7 @@ int main()
     {
         scanf("%s", s1[i].name);
         scanf("%s", s1[i].type);
-        scanf("%f", s1[i].cost);
+        scanf("%f", &s1[i].cost);
     }
     for(int i=0; i<N; i++)
     {
