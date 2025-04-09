@@ -26,7 +26,7 @@ int main()
             max=s1[i].marks;
         }       
     }
-    printf("%.2f", s1[i].marks);
+    printf("%.2f", max);
     return 0;    
 
 }
