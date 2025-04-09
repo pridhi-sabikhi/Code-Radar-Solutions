@@ -17,7 +17,7 @@ int main()
     {
         sum= sum+s1[i].temp;
     }
-    avg= sum/7.0;//can take 7.0
+    avg= sum/7.0;//can take 7 phir bhi chl rha but take 7.0 .0 sirf tb nhi lgani jb /n ho
     printf("Average Temperature: %.2f", avg);
     return 0;
 }
