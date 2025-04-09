@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
-
 struct Student
 {
     int rollno; float marks;
@@ -13,6 +11,7 @@ int main()
     float max=INT_MIN;
     scanf("%d", &n);
     struct Student s1[n];
+    //float max=s1[0].marks; //initilised with 1st bcz this is float so can't do int min
     for(int i=0; i<n; i++)
     {
         scanf("%d", &s1[i].rollno);
@@ -26,7 +25,7 @@ int main()
             max=s1[i].marks;
         }       
     }
-    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",rollno, name, max);
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f", s1[i].rollno, s1[i].name, max);
     return 0;    
 
 }
