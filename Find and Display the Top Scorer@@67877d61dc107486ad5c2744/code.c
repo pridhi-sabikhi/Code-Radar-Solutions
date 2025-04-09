@@ -8,7 +8,7 @@ struct Student
 int main()
 {
     
-    int n;
+    int n, result;
     float max=INT_MIN;
     scanf("%d", &n);
     struct Student s1[n];
@@ -24,9 +24,10 @@ int main()
         if(s1[i].marks> max)
         {
             max=s1[i].marks;
+            result=i;
         }       
     }
-    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f", s1[i].rollno, s1[i].name, max);
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f", s1[result].rollno, s1[result].name, max);
     return 0;    
 
 }
