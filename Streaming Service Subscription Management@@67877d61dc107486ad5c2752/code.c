@@ -23,17 +23,17 @@ int main()
         if(s1[i].type == "Basic")
         {
         countb ++;
-        totalb=totalb+s1[i].cost;
+        totalb = totalb + s1[i].cost;
         }
         else if(s1[i].type == "Standard")
         {
             counts ++;
-            totals=totals+s1[i].cost;
+            totals = totals + s1[i].cost;
         }
-        else
+        else if(s1[i].type == "Premium")
         {
             countp ++;
-            totalp=totalp+s1[i].cost;
+            totalp = totalp + s1[i].cost;
         }
     }
     printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f"
