@@ -36,7 +36,7 @@ int main()
             totalp=totalp+s1[i].cost;
         }
     }
-    printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users,\n Revenue: %.2f; Premium: %d Users, Revenue: %.2f"
+    printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f"
     , countb, totalb, counts, totals, countp, totalp);
     return 0;
 }
