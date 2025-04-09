@@ -23,7 +23,8 @@ int main()
         {
             grade='A';
         }
-        else if(s1[i].marks>70)
+        else if(s1[i].marks>=70) //chahe q mein b/w 70 and 84 hai this means including 70 and 84 bcz 1st was 
+        //till 85 and last is less than 70 so this is inclusive 
         {
             grade='B';
         }
