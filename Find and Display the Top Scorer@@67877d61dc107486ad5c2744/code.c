@@ -9,10 +9,10 @@ int main()
 {
     
     int n, result;
-    //float max=INT_MIN;
+    //chahe float hai but can do int min bcz value hi deni so float do ya int no effect  
+    float max=INT_MIN; //or float max=s1[0].marks;
     scanf("%d", &n);
     struct Student s1[n];
-    float max=s1[0].marks; //initilised with 1st bcz this is float so can't do int min
     for(int i=0; i<n; i++)
     {
         scanf("%d", &s1[i].rollno);
