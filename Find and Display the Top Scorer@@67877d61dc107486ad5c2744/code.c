@@ -9,7 +9,7 @@ int main()
 {
     
     int n, result;
-    float max=INT_MIN;
+    int max=INT_MIN;
     scanf("%d", &n);
     struct Student s1[n];
     //float max=s1[0].marks; //initilised with 1st bcz this is float so can't do int min
