@@ -10,7 +10,7 @@ int main()
 {
     
     int n;
-    int max=INT_MIN;
+    float max=INT_MIN;
     scanf("%d", &n);
     struct Student s1[n];
     for(int i=0; i<n; i++)
@@ -26,7 +26,7 @@ int main()
             max=s1[i].marks;
         }       
     }
-    printf("%.2f", max);
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",rollno, name, max);
     return 0;    
 
 }
