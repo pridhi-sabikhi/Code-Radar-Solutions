@@ -6,7 +6,7 @@ struct day
 };
 int main()
 {
-    struct day s1[6]; //can take 7
+    struct day s1[5]; //can take 7
     float sum=0.0, avg=0.0;
     for(int i=0; i<7; i++)
     {
