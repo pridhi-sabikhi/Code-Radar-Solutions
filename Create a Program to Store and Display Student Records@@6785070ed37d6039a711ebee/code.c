@@ -14,8 +14,7 @@ int main()
     {
         scanf("%d", &s1[i].rollno);
         scanf("%s", s1[i].name);
-        
-        scanf("%f", &s1[i].marks);//%.2f nhi krna vrna name mein name nhi merks jaate hai
+        scanf("%.2f", &s1[i].marks);
     }
     for(int i=0; i<n; i++)
     {
