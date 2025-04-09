@@ -19,7 +19,7 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
-        if(s1[i].marks<50)
+        if(s1[i].marks<50.00)//can write 50
         {
            printf("Not All Passed");
            return 0;
