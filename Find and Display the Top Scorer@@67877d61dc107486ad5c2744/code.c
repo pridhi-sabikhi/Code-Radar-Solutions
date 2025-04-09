@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<limits.h>
 struct Student
 {
     int rollno; float marks;
